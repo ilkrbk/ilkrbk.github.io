@@ -23,7 +23,7 @@ var num = 0;
 
 function loadData() {    
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/list.json');
+    xhr.open('GET', 'https://ilkrbk.github.io/bike/dist/list.json');
     xhr.responseType = 'json';
     
     xhr.onreadystatechange = function () {

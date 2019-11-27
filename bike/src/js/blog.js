@@ -29,7 +29,7 @@ var blognum = 0;
 
 function loadBlog() {    
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/blogList.json');
+  xhr.open('GET', 'https://ilkrbk.github.io/bike/dist/blogList.json');
   xhr.responseType = 'json';
   
   xhr.onreadystatechange = function () {

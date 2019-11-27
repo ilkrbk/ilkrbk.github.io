@@ -1,9 +1,9 @@
 @import "https://use.fontawesome.com/releases/v5.0.6/css/all.css";
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css";
-@import "https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/fonts/fonts.css";
-@import "https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/libs/normalize/normalize.css";
-@import "https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/libs/slick/slick.css";
-@import "https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/libs/slick/slick-theme.css";
+@import "https://ilkrbk.github.io/bike/dist/fonts/fonts.css";
+@import "https://ilkrbk.github.io/bike/dist/libs/normalize/normalize.css";
+@import "https://ilkrbk.github.io/bike/dist/libs/slick/slick.css";
+@import "https://ilkrbk.github.io/bike/dist/libs/slick/slick-theme.css";
 * {
   box-sizing: border-box; }
 
@@ -257,7 +257,7 @@ h1, h2, h3, h4, h5, h6, p {
   @media screen and (max-width: 600px) {
     .video {
       background-position-y: 0;
-      background: url("https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/bg.jpg");
+      background: url("https://ilkrbk.github.io/bike/dist/img/bg.jpg");
       background-size: cover; } }
 
 .video__video {
