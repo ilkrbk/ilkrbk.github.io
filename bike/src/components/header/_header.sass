@@ -1,0 +1,86 @@
+.header
+    position: relative
+
+.header__nav
+    height: 100vh
+    background: $basicBlue
+    position: fixed
+    top: 0
+    left: 0
+    transition: all .3s cubic-bezier(.77,0,.18,1)
+    transform: translateX(-100%)
+    z-index: 999
+
+.header__nav--active
+    transform: translateX(0)
+
+.header__list
+    padding-top: 100px
+
+.header__link
+    padding: 15px 70px
+    @include font(300, 2rem, $white)
+    display: flex
+    text-transform: uppercase
+    position: relative
+    transition: 
+    &:before
+        content: ""
+        position: absolute
+        top: 0
+        left: 0
+        width: 10px
+        height: 100%
+        transition: all .3s ease-in-out
+        transform: translateX(-100%)
+        background: $white
+    &:hover
+        &:before
+            transform: translateX(0)
+    @include mediumDevice
+        font-size: 1rem 
+        
+.header__wrap-icon-btn
+    position: absolute
+    top: 30px
+    right: -70px
+    width: 40px
+    height: 39px
+    background: transparent
+    cursor: pointer
+
+.header__icon-btn
+    width: 40px
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    border-radius: 2px
+    background: $white
+    height: 5px
+    display: flex
+    &:before, &:after
+        content: ""
+        width: 100%
+        height: 5px
+        border-radius: 2px
+        background: $white
+        position: absolute
+        left: 0
+    &:before
+        top: -15px
+    &:after
+        bottom: -15px 
+    
+.header__btn--active
+    transform: translateY(-50%) rotate(45deg)
+    &:before, &:after
+        top: 0
+    &:after
+        transform: rotate(90deg)
+
+.header__wrap-btn--active
+    left: 50%
+    transform: translateX(-50%)
+
+
+    

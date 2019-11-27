@@ -1,0 +1,41 @@
+-
+    var menu = [
+        {
+            href: "#home",
+            link: "Home"
+        },
+        {
+            href: "#about",
+            link: "About"
+        },
+        {
+            href: "#gallery",
+            link: "Gallery"
+        },
+        {
+            href: "#blog",
+            link: "Blog"
+        },
+        {
+            href: "#information",
+            link: "Information"
+        },
+        {
+            href: "#map",
+            link: "Map"
+        },
+        {
+            href: "#contant",
+            link: "Contact"
+        }
+    ]
+
+header.header
+    nav.header__nav
+        .header__wrap-icon-btn
+            span.header__icon-btn
+        ul.header__list
+            - for (let i = 0; i < menu.lenght; i++)
+            each item in menu
+                li.header__item
+                    a.header__link(href= item.href)= item.link

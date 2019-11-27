@@ -1,0 +1,13 @@
+-
+    var img = ['img/img1.jpg', 'img/img2.jpg', 'img/img3.jpg', 'img/img4.jpg']
+
+.advertising
+    ul.advertising__list
+        each item in img
+            li.advertising__item
+                img.advertising__img(src= item alt="modal-not-active")
+#modal.modal
+    span.modal__close
+        i.fas.fa-times
+    img.modal__image#modal1(src="" alt="modal")
+    #caption

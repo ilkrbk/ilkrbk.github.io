@@ -1,0 +1,23 @@
+-
+    var people = [
+        {
+            img: "img/people.png",
+            info: "Rob Singer, Web Developer"
+        },
+        {
+            img: "img/people.png",
+            info: "Rob Singer, Web Developer"
+        }
+    ]
+
+section.testimonials
+    h2.testimonials__title Testimonials
+    img.testimonials__quota(src="img/quota.png")
+    p.testimonials__text    
+        | Vis quaeque inermis atomorum cu. Aperiam suscipiantur at pro. Nec paulo essent hendrerit ut, mel cu oblique eripuit maiestatis.
+    ul.testimonials__list
+        - for (let i = 0; i < people.lenght; i++)
+        each item in people
+            li.testimonials__item
+                img.testimonials__avatar(src= item.img alt="avatar")
+                h3.testimonials__info= item.info

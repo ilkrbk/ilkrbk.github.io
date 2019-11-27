@@ -1,0 +1,32 @@
+-
+    var about = [
+        {
+            icon: "fa-calendar-alt",
+            title: "Blog",
+            descr: "Всех, кто имеет желание публиковать свои отчеты/записи в блогах на сайте — милости просим. "
+        },
+        {
+            icon: "fa-cog",
+            title: "Service",
+            descr: "Помимо продажи мы осуществляем сервисное обслуживание. Купленный велосипед мы доставим вам в собранном и полностью настроенном виде."
+        },
+        {
+            icon: "fa-shopping-cart",
+            title: "shop",
+            descr: "Посмотрите стоимость байков и аксессуаров в нашем каталоге и Вы приятно удивитесь. "
+        }
+    ]
+
+.about#about
+    .container.f-d-c
+        h2.about__title About
+        p.about__descr
+            | Для нас очень важна деловая репутация — мы отвечаем за то, что продаем и стараемся идти клиенту навстречу в решении любых спорных ситуаций. Наши товары и услуги высоко оцениваются не только среди потребителей, но и в профессиональном кругу.
+        ul.about__list
+            - for (let i = 0; i < about.lenght; i++)
+            each item in about
+                li.about__item
+                    i.about__icon.fas(class= item.icon)
+                    .about__text-wrap
+                        h3.about__item-title= item.title
+                        p.about__item-descr= item.descr

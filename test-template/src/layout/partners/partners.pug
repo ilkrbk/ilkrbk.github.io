@@ -1,0 +1,24 @@
+-
+    var image = [
+        {
+            href: "https://www.templatemonster.com",
+            src:"img/partners1.png"
+        },
+        {
+            href: "https://www.motocms.com/ru/",
+            src:"img/partners2.png"
+        },
+        {
+            href: "http://www.templatetuning.com/",
+            src:"img/partners3.png"
+        },
+    ]
+
+.partners
+    h2.partners__title Our partners
+    ul.partners__list
+        - for (let i = 0; i < image.lenght; i++)
+        each item in image
+            li.partners__item
+                a.partners__link(href= item.href)
+                    img.partners__img(src= item.src)

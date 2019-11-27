@@ -1,0 +1,50 @@
+.features
+    @include section(120px, $bgGrey url("../img/bg-features.png") no-repeat, none, 1)
+    background-position: 80% 100%
+    background-size: 45%
+    @include largeDevice
+        background-position: 130% 100%
+    @include mediumDevice
+        background-position: 140% 100%
+    @include smallDevice
+        background: $bgGrey
+
+.features__title
+    @include titleBlock($fontGrey)     
+
+.features__descr
+    @include descrBlock($fontGrey)
+
+.features__list
+    @include list
+    padding-right: 60%
+    @include largeDevice
+        padding-right: 25%
+    @include smallDevice
+        padding-right: 0
+
+.features__item
+    margin-top: 65px
+    display: flex
+    @include largeDevice
+        margin-top: 40px
+    @include smallDevice
+        margin-top: 20px
+    @include extraSmallDevice
+        flex-direction: column
+
+.features__wrap-icon    
+    margin: 0 30px
+    i
+        font-size: 3rem
+        color: #cdcdcd
+    @include extraSmallDevice
+        display: flex
+        justify-content: center
+        margin: 0
+
+.features__card-title
+    @include titleCard
+
+.features__card-descr
+    @include descrCard

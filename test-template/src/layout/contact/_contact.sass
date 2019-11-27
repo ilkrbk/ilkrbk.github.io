@@ -1,0 +1,61 @@
+.contact
+    @include section(none, #2c2c2c, none, 1)
+    padding: 120px 0 40px 0 
+    display: flex
+    flex-direction: column
+    align-items: center
+
+
+.contact__title
+    @include titleBlock($white)
+
+.contact__address
+    @include font (1.25rem, $white)
+    margin-top: 80px
+    @include smallDevice
+        text-align: center
+        font-size: 0.9rem
+        margin-top: 40px
+
+.contact__phone
+    @include font (1.25rem, $white)
+    margin-top: 15px
+    @include smallDevice
+        font-size: 0.9rem
+        margin-top: 10px
+
+.contact__list 
+    display: flex
+    margin-top: 70px
+    @include smallDevice
+        margin-top: 30px
+
+.contact__item
+    margin-right: 10px
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    transition: all .2s ease-in
+    &:last-child
+        margin: 0
+    &:nth-child(1)
+        background: #3b579d
+    &:nth-child(2)
+        background: #5ea9dd
+    &:nth-child(3)
+        background: #df4a32
+    &:hover
+        transform: scale(1.2)
+
+.contact__link > i
+    color: $white
+    font-size: 1.5rem
+
+.contact__copy-write
+    margin-top: 70px
+    @include font (0.875rem, #424242)
+    @include smallDevice
+        margin-top: 30px

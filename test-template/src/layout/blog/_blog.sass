@@ -1,0 +1,83 @@
+.blog
+    @include section(120px, $bgGrey, none, 1)
+
+.blog__title
+    @include titleBlock($fontGrey)
+
+.blog__descr
+    @include descrBlock($fontGrey)
+
+.blog__list
+    @include list
+    @include largeDevice
+        flex-direction: column
+        align-items: center
+
+.blog__item
+    width: 570px
+    height: 350px
+    overflow: hidden
+    position: relative
+    background-size: cover
+    box-shadow: $shadowSmall
+    margin-right: 20px
+    &:nth-child(1)
+        background: url("../img/bg-article1.jpg") center center no-repeat
+    &:nth-child(2)
+        background: url("../img/bg-article2.jpg") center center no-repeat
+    &:nth-child(2n)
+	    margin-right: 0
+    @include largeDevice 
+        margin-right: 0
+        margin-top: 30px
+        &:first-child
+	        margin-top: 0
+    @include mediumDevice
+        width: 550px
+    @include smallDevice
+        width: 100%
+        height: 280px
+
+.blog__icon
+    @include circle(45px, $blue, 1rem, $white)
+    position: absolute
+    right: 30px
+    top: -100%
+    transition: all .3s ease-in
+    display: flex
+    justify-content: center
+    align-items: center
+    i 
+        margin-bottom: 3px
+        margin-left: 4px
+
+.blog__info
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    left: 0
+    bottom: -100%
+    flex-direction: column
+    justify-content: flex-end
+    transition: all .3s ease-in
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 42%,rgba(0,0,0,0.7) 100%)
+    padding: 30px
+
+.blog__date
+    margin-top: 0
+    @include font(1rem, #cfcfcf)
+
+.blog__article-descr
+    margin-top: 10px
+    @include font(1.5rem, $white)
+
+.blog__item:hover .blog__info
+    bottom: 0
+
+.blog__item:hover .blog__icon
+    top: 30px
+
+
+
+    

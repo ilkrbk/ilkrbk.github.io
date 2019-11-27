@@ -1,0 +1,60 @@
+.advantages
+    @include section(120px, $red, $shadowBig, 2)
+
+.advantages__title
+    @include titleBlock($white)
+
+.advantages__descr
+    @include descrBlock($white)
+
+.advantages__list
+    @include list
+
+.advantages__item
+    margin-top: 65px
+    width: 280px
+    padding: 0 15px
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4)
+        margin-top: 0
+    @include largeDevice
+        &:nth-child(3),
+        &:nth-child(4)
+            margin-top: 65px
+    @include smallDevice
+        width: 100%
+        margin-top: 30px
+        &:nth-child(2),
+            margin-top: 30px
+
+.advantages__wrap-icon
+    display: flex
+    justify-content: center
+
+.advantages__circle
+    @include circle(90px, $white, none, none)
+
+.advantages__num
+    @include font (2.8125rem, red)
+    position: relative
+    &:before
+        content: "."
+        position: absolute
+        bottom: 0
+        right: -10px
+        color: $red
+
+.advantages__card-title
+    @include titleCard
+    margin-top: 30px
+    color: $white
+    text-align: center
+    @include smallDevice
+        margin-top: 10px
+
+.advantages__card-descr
+    @include descrCard
+    color: $white
+    text-align: center

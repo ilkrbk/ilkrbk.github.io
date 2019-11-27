@@ -1,0 +1,33 @@
+-
+    var list = [
+        {
+            title: "Instant Skins Switcher",
+            descr: "Switch styles instantly; choose among Material, Flat, Minimal, Grunge, Metro, 8-bit or Non-Standard Geometry.",
+            icon: "fas fa-cogs"
+        },
+        {
+            title: "Various Scripts Included",
+            descr: "Various Scripts are already on a board. Use Owl Carousel, Tabs etc. for your needs",
+            icon: "fas fa-desktop"
+        },
+        {
+            title: "Fully Responsive Design",
+            descr: "Product is tested on the common devices. It will render and scale on any possible screen.",
+            icon: "fas fa-laptop"
+        },
+    ]
+
+section.features
+    .container.a-i-c.f-d-c
+        h2.features__title Features
+        p.features__descr
+            | Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.
+        ul.features__list
+            - for (let i = 0; i < list.lehght; i++)
+            each item in list
+                li.features__item
+                    .features__wrap-icon  
+                        i(class= item.icon)
+                    .features__wrap-text
+                        h3.features__card-title= item.title
+                        p.features__card-descr= item.descr

@@ -1,0 +1,21 @@
+.video
+    video.video-bg( autoplay="autoplay" loop="loop" poster="img/video-bg.jpg")
+        source(src="img/video-bg.mp4", type="video/mp4")
+    .video__text-wrap
+        .video__text
+            h1.video__title-name colorful 
+                span flat
+            h3.video__descr The best open page template  for
+            h2.video__title Web Proffesionals
+        .video__wrap-form
+            form.video__form
+                input(type="text" placeholder="Full name").video__input   
+                input(type="text" placeholder="E-mail").video__input  
+                input(type="text" placeholder="Phone").video__input  
+                button.video__bgn Get Started Now!
+.form--active
+    form.video__form.video__form--active
+        input(type="text" placeholder="Full name").video__input   
+        input(type="text" placeholder="E-mail").video__input  
+        input(type="text" placeholder="Phone").video__input  
+        button.video__bgn Get Started Now!

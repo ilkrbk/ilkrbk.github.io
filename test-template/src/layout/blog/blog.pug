@@ -1,0 +1,27 @@
+-
+    var article = [
+        {
+            date: "2 days ago",
+            descr: "No nam conceptam suscipiantur..."
+        },
+        {
+            date: "4 days ago",
+            descr: "Eum erroribus necessitatibus ne..."
+        }
+    ]
+
+section.blog
+    .container.f-d-c
+        h2.blog__title Latest From the Blog
+        p.blog__descr
+            | Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.
+        ul.blog__list
+            - for (let i = 0; i < article.lenght; i++)
+            each item in article
+                li.blog__item
+                    a.blog__link(href="#")
+                        a.blog__icon(href="#")
+                            i.fas.fa-share-square
+                        .blog__info
+                            span.blog__date= item.date
+                            p.blog__article-descr= item.descr

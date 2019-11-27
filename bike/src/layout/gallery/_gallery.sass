@@ -1,0 +1,155 @@
+.gallery
+    padding: 70px 0
+    background: #ed2553
+    @include smallDevice
+        padding: 20px
+
+.gallery__title
+    @include font(700, 2.5rem, $white)
+    text-transform: uppercase
+    margin-top: 20px
+    text-align: center
+
+.gallery__descr
+    @include font(300, 1rem, $white)
+    margin-top: 10px
+    text-align: center
+
+.gallery__list
+    margin-top: 30px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.gallery__item
+    position: relative
+    width: 383px
+    height: 200px
+    overflow: hidden
+    margin-top: 12px
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3)
+        margin-top: 0
+    &:before
+        content: ""
+        position: absolute
+        left: 0
+        bottom: 0
+        width: 100%
+        height: 100%
+        transform: translateY(-100%)
+        background: rgba(0, 0, 0, .1)  
+        transition: all .2s cubic-bezier(.84,-0.01,.8,1.94)
+        z-index: 9 
+        pointer-events: none
+    &:hover
+        &:before
+            transform: translateY(0)
+    i
+        padding: 1px 0 0 1px
+        width: 40px
+        height: 40px
+        font-size: 1.2rem
+        border-radius: 50%
+        background: #ed2553
+        display: flex
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: 0
+        right: 25px 
+        color: $white
+        transition: all .2s cubic-bezier(.84,-0.01,.8,1.94)
+        transform: translateY(-100%)
+        z-index: 99
+        pointer-events: none        
+    &:hover i
+        transform: translateY(0)        
+        top: 25px
+    @include largeDevice
+        width: 419px
+        &:nth-child(3)
+            margin-top: 12px
+    @include mediumDevice
+        width: 269px
+        height: 150px
+    @include smallDevice
+        width: 100%
+        height: 150px
+        &:nth-child(2)
+            margin-top: 12px
+
+.gallery__img
+    width: 100%
+    height: auto
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+
+.gallery__btn
+    padding: 15px 0
+    width: 320px
+    margin: 30px auto 0 
+    text-align: center
+    background: transparent
+    border: 2px solid $white
+    border-radius: 2px
+    @include font(400, 1.8rem, $white)
+    text-transform: uppercase
+    transition: all .2s ease-in-out
+    &:hover
+        background: $white
+        color: #ed2553
+    @include extraSmallDevice
+        width: 100%
+        font-size: 1rem
+
+.gallery__btn--none
+    display: none
+
+#modal
+    display: none
+    position: fixed
+    z-index: 999999999999999
+    padding-top: 100px
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgb(0,0,0)
+    background-color: rgba(0,0,0,0.9)
+
+.modal__image
+    margin: auto
+    display: block
+    height: 80%
+    max-width: 90%
+    @include smallDevice
+        height: auto
+        width: 95%
+
+.modal__image, #caption
+    animation-name: zoom
+    animation-duration: 0.6s
+
+@keyframes zoom
+    from
+        transform: scale(0.1)
+    to
+        transform: scale(1)
+
+.modal__close
+    position: absolute
+    top: 15px
+    right: 35px
+    color: #f1f1f1
+    font-size: 3rem
+    transition: 0.3s
+
+.close:hover,
+.close:focus 
+    color: #bbb
+    text-decoration: none
+    cursor: pointer

@@ -1,0 +1,39 @@
+-
+    var card = [
+        {
+            title: "Exclusive Shortcodes",
+            descr: "Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.",
+            icon: "far fa-address-card"
+        },
+        {
+            title: "100% valid and clean code",
+            descr: "Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.",
+            icon: "fas fa-users"
+        },
+        {
+            title: "Free Lifetime Updates",
+            descr: "Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.",
+            icon: "fas fa-sync-alt"
+        },
+        {
+            title: "24/7/365 Customer Support",
+            descr: "Malorum dolores gloriatur pro at, id offendit lucilius democritum quo. Ludus ubique fastidii dolores sit et persius reformidans.",
+            icon: "fas fa-headphones"
+        }
+    ]
+
+section.about  
+    .container.a-i-c.f-d-c
+        h2.about__title About Us
+        p.about__descr
+            | Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.
+        ul.about__list
+            - for (let i = 0; i < card.lenght; i++)
+            each item in card
+                li.about__item
+                    .about__wrap-icon
+                        .about__circle
+                            i(class= item.icon)
+                    .about__wrap-text   
+                        h3.about__card-title= item.title
+                        p.about__card-descr= item.descr

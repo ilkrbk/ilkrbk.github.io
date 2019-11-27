@@ -1,0 +1,63 @@
+-
+    var team = [
+        {
+            avatar: "img/avatar1.png",
+            name: "Alan Sobakovich",
+            post: "Founder",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar2.png",
+            name: "John Mu",
+            post: "Product Manager",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar3.png",
+            name: "Melissa Jade",
+            post: "Designer",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar4.png",
+            name: "Greg Mercury",
+            post: "Developer",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar1.png",
+            name: "Alan Sobakovich",
+            post: "Founder",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar2.png",
+            name: "John Mu",
+            post: "Product Manager",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar3.png",
+            name: "Melissa Jade",
+            post: "Designer",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        },
+        {
+            avatar: "img/avatar4.png",
+            name: "Greg Mercury",
+            post: "Developer",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. "
+        }
+    ]
+
+section.team   
+    .container.j-c-f-s.f-d-c
+        h2.team__title Our Team
+        ul.team__list   
+            - for (let i = 0; i < team.lenght; i++)
+            each item in team
+                li.team__item
+                    img.team__avatar(src= item.avatar alt="avatar")
+                    h3.team__name= item.name
+                    h4.team__post= item.post
+                    p.team__descr= item.descr

@@ -1,0 +1,93 @@
+@mixin extraSmallDevice
+    @media screen and (max-width: 450px) 
+        @content
+
+@mixin smallDevice 
+    @media screen and (max-width: 600px)
+        @content
+
+@mixin mediumDevice
+    @media screen and (max-width: 768px) 
+        @content
+
+@mixin largeDevice 
+    @media screen and (max-width: 1240px) 
+        @content
+
+@mixin font($fz, $color)
+    font-family: $basicFont, sans-serif
+    font-size: $fz
+    color: $color
+
+@mixin titleBlock($color)
+    @include font(2.8125rem, $color)
+    margin-top: 10px 
+    font-weight: 400
+    line-height: 60px
+    margin: auto
+    @include largeDevice
+        font-size: 2.5rem
+    @include mediumDevice
+        font-size: 2rem
+    @include smallDevice 
+        font-size: 1.8rem
+    @include extraSmallDevice 
+        font-size: 1.5rem
+
+@mixin descrBlock($color)
+    @include font (1.25rem, $color)
+    margin-top: 45px
+    padding: 0 100px
+    text-align: center
+    @include mediumDevice
+        padding: 0
+    @include smallDevice
+        font-size: 1rem
+        margin-top: 25px
+
+@mixin list
+    margin-top: 70px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @include smallDevice 
+        margin-top: 30px
+
+@mixin circle($diametr, $color, $size, $iconColor)
+    width: $diametr
+    height: $diametr
+    border-radius: 50%
+    background: $color
+    display: flex
+    justify-content: center
+    align-items: center
+    i
+        font-size: $size
+        color: $iconColor
+
+@mixin section($padding, $bg, $shadow, $z)
+    padding: $padding 0
+    box-shadow: $shadow
+    background: $bg
+    position: relative
+    z-index: $z
+    @include mediumDevice
+        padding: 20px
+
+@mixin titleCard
+    @include font (1.5rem, $fontGrey)
+    margin-top: 10px
+    @include smallDevice
+        font-size: 1.25rem
+    @include extraSmallDevice
+        text-align: center
+
+@mixin descrCard
+    @include font (1.25rem, $fontGrey)
+    margin-top: 40px
+    @include largeDevice
+        margin-top: 20px
+    @include smallDevice
+        font-size: 1rem
+    @include extraSmallDevice
+        text-align: center

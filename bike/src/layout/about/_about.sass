@@ -1,0 +1,54 @@
+.about
+    padding: 70px 0
+    background: #fff
+    @include mediumDevice
+        padding: 20px
+
+.about__title
+    @include font(700, 2.5rem, #333333)
+    text-transform: uppercase
+    margin-top: 20px
+    text-align: center
+
+.about__descr
+    @include font(300, 1rem, #333333)
+    margin-top: 10px
+    text-align: center
+
+.about__list
+    margin-top: 50px
+    display: flex
+    justify-content: space-between
+    @include mediumDevice
+        flex-direction: column
+
+.about__item
+    width: 383px
+    display: flex
+    i
+        font-size: 4rem
+        padding: 0 10px
+        color: #757575
+    @include mediumDevice
+        width: 100%
+        margin-top: 20px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+.about__icon
+    @include mediumDevice
+        margin: 0 auto
+
+.about__item-title
+    @include font(300, 1.3rem, #333333)
+    margin-top: 0
+    @include mediumDevice
+        margin-top: 15px
+        text-align: center
+
+.about__item-descr
+    @include font(300, 0.8rem, #333333)
+    margin-top: 5px
+    @include mediumDevice
+        text-align: center

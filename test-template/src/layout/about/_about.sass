@@ -1,0 +1,45 @@
+.about
+    @include section(120px, $white, $shadowBig, 2)
+
+.about__title
+    @include titleBlock($fontGrey)
+
+.about__descr
+    @include descrBlock($fontGrey)
+
+.about__list
+    @include list
+
+.about__item
+    margin-top: 65px
+    width: 587px
+    display: flex
+    &:nth-child(1),
+    &:nth-child(2)
+        margin-top: 0
+    @include largeDevice 
+        width: 100%
+        &:nth-child(2)
+            margin-top: 65px
+    @include smallDevice
+        margin-top: 20px
+        &:nth-child(2)
+            margin-top: 20px
+    @include extraSmallDevice
+        flex-direction: column
+
+.about__wrap-icon
+    margin: 0 30px
+    @include extraSmallDevice
+        display: flex
+        justify-content: center
+        margin: 0
+
+.about__circle
+    @include circle(90px, $blue, 3rem, $white)
+
+.about__card-title
+    @include titleCard
+
+.about__card-descr
+    @include descrCard

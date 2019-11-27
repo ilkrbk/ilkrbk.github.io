@@ -1,0 +1,59 @@
+- 
+    var numCard = [
+        {
+            title: "Cu tantas platonem",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "1"
+        },
+        {
+            title: "Aperiam suscipiantur",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "2"
+        },
+        {
+            title: "Nusquam facilisis",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "3"
+        },
+        {
+            title: "Ex vel legimus",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "4"
+        },
+        {
+            title: "Nusquam facilisis",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "5"
+        },
+        {
+            title: "Ex vel legimus",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "6"
+        },
+        {
+            title: "Aperiam suscipiantur",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "7"
+        },
+        {
+            title: "Cu tantas platonem",
+            descr: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. ",
+            num: "8"
+        }
+    ]
+
+section.advantages
+    .container.a-i-c.f-d-c
+        h2.advantages__title Advantages
+        p.advantages__descr
+            | Lorem ipsum dolor sit amet, cetero temporibus ex nec. Et facilisis definiebas est, nec et autem impetus oportere, vim te exerci noster omnium. Habeo dicam vim at, sale possit nostrum et pro.
+        ul.advantages__list
+            - for (let i = 0; i < numCard.lenght; i++)
+            each item in numCard
+                li.advantages__item
+                    .advantages__wrap-icon
+                        .advantages__circle
+                            span.advantages__num= item.num
+                    .advantages__wrap-text 
+                        h3.advantages__card-title= item.title
+                        p.advantages__card-descr= item.descr

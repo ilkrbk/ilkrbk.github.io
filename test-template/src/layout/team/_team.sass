@@ -1,0 +1,30 @@
+.team
+    @include section(120px, $white, none, 1)
+
+.team__title
+    @include titleBlock($fontGrey)
+
+.team__list
+    @include list
+
+.team__item
+    padding: 0 10px
+
+.team__avatar
+    margin: 0 auto
+    @include circle(200px, none, none, none)
+
+.team__name
+    text-align: center
+    margin-top: 30px
+    @include font (1.5rem, $fontGrey)
+
+.team__post
+    text-align: center
+    margin-top: 20px
+    @include font (1rem, $blue)
+
+.team__descr
+    margin-top: 20px
+    @include font (1.25rem, $fontGrey)
+    text-align: center

@@ -1,0 +1,76 @@
+-
+    var card1 = [
+        {
+            title: "Tempor incididunt",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            title: "Esse cillum",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            title: "Eiusmod tempor",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        }
+    ]
+-
+    var card2 = [
+        {
+            title: "Eiusmod tempor",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            title: "Dolore eu fugiat",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            title: "Incididunt ut labore",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        }
+    ]
+-
+    var card3 = [
+        {
+            title: "Incididunt ut labore",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            title: "Bulla pariatu",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        },
+        {
+            title: "Esse cillum",
+            descr: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt."
+        }
+    ]
+
+
+section.faqs.parallax-window
+    .container.j-c-f-s.f-d-c
+        h2.faqs__title FAQs
+        .faqs__wrap-list
+            ul.faqs__list
+                - for(let i = 0; i < card1.length; i++)
+                each item in card1
+                    li.faqs__item
+                        span.faqs__title-item
+                            != item.title
+                            i.fas.fa-plus-circle
+                        p.faqs__descr-item= item.descr
+            ul.faqs__list
+                - for(let i = 0; i < card2.length; i++)
+                each item in card2
+                    li.faqs__item
+                        span.faqs__title-item
+                            != item.title
+                            i.fas.fa-plus-circle
+                        p.faqs__descr-item= item.descr
+            ul.faqs__list
+                - for(let i = 0; i < card3.length; i++)
+                each item in card3
+                    li.faqs__item
+                        sapn.faqs__title-item
+                            != item.title
+                            i.fas.fa-plus-circle
+                        p.faqs__descr-item= item.descr
+                        

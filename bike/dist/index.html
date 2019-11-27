@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home page
+    </title>
+    <meta name="author" content>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__wrap-icon-btn"><span class="header__icon-btn"></span></div>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#home">Home</a></li>
+          <li class="header__item"><a class="header__link" href="#about">About</a></li>
+          <li class="header__item"><a class="header__link" href="#gallery">Gallery</a></li>
+          <li class="header__item"><a class="header__link" href="#blog">Blog</a></li>
+          <li class="header__item"><a class="header__link" href="#information">Information</a></li>
+          <li class="header__item"><a class="header__link" href="#map">Map</a></li>
+          <li class="header__item"><a class="header__link" href="#contant">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="maincontent">
+      <div class="video" id="home">
+        <video class="video__video" autoplay muted loop poster="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/video-bg.jpg">
+          <source src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/video-bg.mp4" type="video/mp4">
+          <source src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/video-bg.webm" type="video/webm">
+        </video>
+        <div class="video__text-wrap">
+          <h1 class="video__title">Biking extreme, sport, tourism.</h1>
+          <p class="video__descr">Сейчас трудно найти человека, который не хотел бы отправиться в путешествия — новые города, в которых вы никогда не бывали, прекрасные ландшафты и пейзажи, не такие как на Родине, могучие реки, поросшие цветами озёра, новые люди, впечатления, лица, уходящая вдаль дорога; и всё это — тонкая линия, начерченная вами на яркой карте.</p>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="container f-d-c">
+          <h2 class="about__title">About</h2>
+          <p class="about__descr">Для нас очень важна деловая репутация — мы отвечаем за то, что продаем и стараемся идти клиенту навстречу в решении любых спорных ситуаций. Наши товары и услуги высоко оцениваются не только среди потребителей, но и в профессиональном кругу.</p>
+          <ul class="about__list">
+            <li class="about__item"><i class="about__icon fas fa-calendar-alt"></i>
+              <div class="about__text-wrap">
+                <h3 class="about__item-title">Blog</h3>
+                <p class="about__item-descr">Всех, кто имеет желание публиковать свои отчеты/записи в блогах на сайте — милости просим. </p>
+              </div>
+            </li>
+            <li class="about__item"><i class="about__icon fas fa-cog"></i>
+              <div class="about__text-wrap">
+                <h3 class="about__item-title">Service</h3>
+                <p class="about__item-descr">Помимо продажи мы осуществляем сервисное обслуживание. Купленный велосипед мы доставим вам в собранном и полностью настроенном виде.</p>
+              </div>
+            </li>
+            <li class="about__item"><i class="about__icon fas fa-shopping-cart"></i>
+              <div class="about__text-wrap">
+                <h3 class="about__item-title">shop</h3>
+                <p class="about__item-descr">Посмотрите стоимость байков и аксессуаров в нашем каталоге и Вы приятно удивитесь. </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="gallery" id="gallery">
+        <div class="container j-c-c f-d-c">
+          <h2 class="gallery__title">Gallery</h2>
+          <p class="gallery__descr">Совместный отдых и помощь друг другу ключевые факторы нашего сообщества. Каждый велосипедист понимает важность взаимовыручки на дороге.</p>
+          <ul class="gallery__list">
+            <li class="gallery__item"><img class="gallery__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic1.jpg" alt="imgModal"><i class="fas fa-search-plus"></i></li>
+            <li class="gallery__item"><img class="gallery__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic2.jpg" alt="imgModal"><i class="fas fa-search-plus"></i></li>
+            <li class="gallery__item"><img class="gallery__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic3.jpg" alt="imgModal"><i class="fas fa-search-plus"></i></li>
+            <li class="gallery__item"><img class="gallery__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic4.jpg" alt="imgModal"><i class="fas fa-search-plus"></i></li>
+            <li class="gallery__item"><img class="gallery__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic5.jpg" alt="imgModal"><i class="fas fa-search-plus"></i></li>
+            <li class="gallery__item"><img class="gallery__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic6.jpg" alt="imgModal"><i class="fas fa-search-plus"></i></li>
+          </ul>
+          <button class="gallery__btn">more</button>
+        </div>
+      </div>
+      <div class="modal" id="modal"><span class="modal__close"><i class="fas fa-times"></i></span><img class="modal__image" id="modal1" src="" alt="modal"></div>
+      <div class="blog" id="blog">
+        <div class="container f-d-c">
+          <h2 class="blog__title">Blog</h2>
+          <p class="blog__descr">Наш блог созданный для велосипедистов. Он объединяет людей со сходным мышлением. Пришло время заявить о велосипедной культуре, как о движении нового поколения и сказать, что характеризует велокультуру в целом и нас, велосипедистов.</p>
+          <ul class="blog__list">
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic7.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Возврат и обмен велосипеда</h3>
+                <p class="blog__item-descr">Если в процессе использования велосипеда возникли технические неполадки или были выявлены неисправности связанные с производственным браком, то и в этом случае нам поможет закон «О защите прав потребителя». Закон гласит, что товар ненадлежащего качества можно вернуть или обменять в течение его срока годности, но это в том случае, если на данный товар не предусмотрен гарантийный срок. На велосипед же, почти всегда, устанавливается гарантийный срок, с определенными условиями</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">10.03.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic8.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Скорость развиваемая велосипедом</h3>
+                <p class="blog__item-descr">Конечно скоростные показатели сильно зависят от физических кондиций велосипедиста, поэтому результаты профессиональных спортсменов сильно отличаются от любительских. Абсолютный рекорд скорости на велосипеде составляет 268 км/ч, но при определенных условиях. Обладатель рекорда Фред Ромпелберг двигался под прикрытием специального автомобиля с обтекателем, который не только исключал сопротивление воздуха, но и создавал вихрь тянущий Фреда за собой. Рекорд максимальной скорости при спуске с горы на MTB байке держится на уровне 210 км/ч.</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">08.03.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic9.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Езда по грязи и песку</h3>
+                <p class="blog__item-descr">Для грязевых участков разной протяженности, нужно подбирать правильно скорость при въезде в грязь. Если промежуток небольшой, то можно проскочить его на хорошей скорости, но такой, чтобы не потерять управление. Кроме того, имейте в виду, что под водой и грязью могут быть препятствия в виде камней и ям. Если участок значительный, то не стоит въезжать туда на большой скорости, скорей всего это приведет к сносу переднего колеса и потере управляемости.При движении тело должно быть расслабленным, а нагрузка на велосипед распределена равномерно. Необходимо быть готовым среагировать в любой момент, для удержания равновесия. Как только получается удерживать равновесие, стоит немного загрузить заднее колесо, для лучшего сцепления.При движении тело должно быть расслабленным, а нагрузка на велосипед распределена равномерно. Необходимо быть готовым среагировать в любой момент, для удержания равновесия. Как только получается удерживать равновесие, стоит немного загрузить заднее колесо, для лучшего сцепления.Как и в обычном режиме, при движении по грязи нужно смотреть не под переднее колесо, а туда, куда едешь. Необходимо заранее обдумывать маршрут движения до сухого участка. В грязи и песке переднее колесо так и норовит снести в сторону, поэтому активная рулежка неотъемлемая часть грязевых покатушек.Важнейшее условия прохождения длительных участков грязи – это постоянный каденс, только перестанете крутить педали и считайте, что увязли. Именно равномерное усилии на педали поможет пройти даже сложные участки. Как раз для этого и нужен исправный переключатель скоростей, от работы которым зависит 50 % успеха. Как только чувствуете, что колесо вязнет, переходите на более низкую передачу.</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">06.03.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic10.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Городской велосипед</h3>
+                <p class="blog__item-descr">Жители крупных городов часто сталкиваются с проблемой выбора транспорта для поездки на работу, в магазин и т.д. Конечно самый удобный способ – личный автомобиль, но в последнее время очень медленный, пробки на догах «съедают» часы драгоценной жизни. Общественный транспорт – если он быстро довозит до нужных мест и вас не смущают «тесное» общение, то Вам – повезло, обычно он и ходит не быстро и не всегда доводит до нужного места. Мотоциклы, мопеды – хороши в современном городе, но риск получить травму велик и хранить такой транспорт не всегда удается. Велосипед – простой, доступный, без проблем дает передвигаться в радиусе 10-15км от дома, без затрат, пробок и толчеи; есть недостатки - не все могут ездить в плохую погоду, нужна начальная физическая подготовка. Если вы стали обладателем городского велосипеда, пожалуйста, соблюдайте ПДД, уважайте пешеходов – помните у них почти всегда преимущество.</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">04.03.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic11.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Хардтейл или двухподвес</h3>
+                <p class="blog__item-descr">Большая стоимость двухподвеса обусловлена такой деталью, как второй амортизатор, его ценник сам по себе уже довольно-таки высокий, причём для многих велосипедистов стоимость заднего амортизатора будет превалировать над стоимостью переднего амортизатора. Задний амортизатор больше отрабатывает неровности дороги, и за это цениться велосипедистами которые катают в стиле 'Экстрим'. Что касается хардтейла, то за ту же цену вы получите хороший велосипед с навеской приближенной к топовому уровню. У хардтейла нет заднего амортизатора, поэтому вам не придется его обслуживать и вы не будете переплачивать за дополнительные комплектующие. Подводя итоги сравнения этих двух типов велосипедов, можно с уверенностью сказать, что для обычного спокойного и умеренного катания ваш выбор Хардтейл, если вы любитель поднять адреналин в крови, спускаясь или поднимаясь по ухабам и склонам, то пересаживайтесь на двухподвес.</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">02.03.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic12.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Как выбрать первый велосипед?</h3>
+                <p class="blog__item-descr">В наше время велосипед это не просто средство передвижения! Называете его как хотите: братишка, лучший друг, двухколесный друг, спортинвентарь, стиль жизни - мы поможем подобрать велосипед по вашим предпочтениям в езде и независимо от того какой велосипед вы выберете существует несколько деталей на которые стоит обратить внимание.Материалы рамы влияют на накат и скорость велосипеда. Последнее время производители велосипедов используют алюминиевые сплавы, тем ни менее, есть динозавры производства которые все еще используют сталь. В ней есть свои преимущества тем, но когда будете приобретать такой велосипед вспомните насколько тяжело тащить его на этаж.Сделайте выбор в пользу переключателя с алюминиевым корпусом его легче настроить он не будет ломаться. Старые рамы делали с интегриррованой серьгой, в народе, с петухом на раме - это приводило к массе проблем. Со съемным петухом ваша рама и ваш переключатель будут в полной безопасности, по-скольку при падении такая маленькая деталь вашего велосипеда возьмет на себя большую часть повреждений. Ведь маленькую дешовую деталь легче заменить чем дорогой переключатель? Правильно?Тормоз дисковый или ободной? Если у вас в приоритете стоит езда по бездорожью то есть большой риск загрязнить обод или же поставить восьмерку, тогда на ободном тормозе будет проблематичнее тормозить, тем не мение, проблемы с дисковыми тормозами обходится намного дороже. Если оба велосипеда в одной ценовой категории лучше выбрать конечно же ободной, по-скольку хороший ободной на много лучше чем дешевые дисковые системы. Если всё же выбор пал на дисковые тормоза остается вопрос - гидравлические или механические? Если уровень вашего катания любительский, впринцыпе, с головой сойдет  механика, но у  гидравлики есть свои плюсы которые могут оценить не только профи. Задайте себе такой вопрос любите ли вы сидеть в мастерских в долгих раздумиях о ДОТе или органическом масле? Запомните, гидравлический тормоз не должен быть дешевым - скупой платит дважды.Кассета или трещотка? Кассета, однозначно. Трещотка это достаточно устаревшая система которая заставляет вас часто менять трансмиссии. И ещё пара мелочей в передачу - очень редко производители комплектуют свои велосипеды хорошими педалями, они служат для того чтобы вы смогли прокатиться и попробовать этот велосипед. Поэтому при покупке велосипеда сразу же приобретите педали по вкусу.  Далее в этот список попадают грипсы на замках, потому как ровно через месяц ваши грипсы возможно начнут прокручиваться. Сюда же берем задний фонарик и защиту пера - не забываете эти важные элементы.</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">28.02.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+            <li class="blog__item"><img class="blog__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/pic13.jpg" alt="blogImg">
+              <div class="blog__text-wrap">
+                <h3 class="blog__item-title">Как ширина покрышки влияет на езду велосипеда</h3>
+                <p class="blog__item-descr">Вело покрышки для шоссейных велосипедов выпускаются в размерах 19мм, 23мм, 25мм и 28мм.Чем уже покрышка тем лучше ее накат, но для безопасной езды на них нужен асфальт хорошего качества, иначе есть вероятность повредить покрышку, обод и вообще это не безопасно.Производители ставят покрышки 23мм, но если планируются маршруты где не очень хороший асфальт ставят 25мм на накате это не очень сказывается.Размер 28мм считается все дорожным и даже «зимним». Но установить их получится далеко не на каждый велосипед, так как зазоры между вилкой и перьям очень маленький. Вело покрышки для шоссейных велосипедов выпускаются в размерах 19мм, 23мм, 25мм и 28мм.Чем уже покрышка тем лучше ее накат, но для безопасной езды на них нужен асфальт хорошего качества, иначе есть вероятность повредить покрышку, обод и вообще это не безопасно.Производители ставят покрышки 23мм, но если планируются маршруты где не очень хороший асфальт ставят 25мм на накате это не очень сказывается.Размер 28мм считается все дорожным и даже «зимним». Но установить их получится далеко не на каждый велосипед, так как зазоры между вилкой и перьям очень маленький.</p>
+                <footer class="blog__footer">
+                  <date class="blog__item-date">26.02.2018</date>
+                  <ul class="blog__social">
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-thumbs-up"></i></li>
+                    <li class="blog__icon-wrap"><i class="blog__icon fas fa-comment"></i></li>
+                  </ul>
+                </footer>
+              </div>
+            </li>
+          </ul>
+          <button class="blog__btn">more</button>
+        </div>
+      </div>
+      <div class="blog__modal" id="blogModal"><span class="blog__modal--close"><i class="fas fa-times"></i></span><img class="blog__modal--image" id="blogModal1" src="" alt="modal">
+        <div id="blogCaption"></div>
+      </div>
+      <div class="rating" id="information">
+        <nav class="rating__nav">
+          <ul class="rating__list-nav">
+            <li class="rating__item-nav">
+              <h3 class="rating__title-nav">Rigid</h3><span class="rating__num-nav">3285</span>
+            </li>
+            <li class="rating__item-nav">
+              <h3 class="rating__title-nav">HardTail</h3><span class="rating__num-nav">10496</span>
+            </li>
+            <li class="rating__item-nav">
+              <h3 class="rating__title-nav">Full Suspension</h3><span class="rating__num-nav">3791</span>
+            </li>
+            <li class="rating__item-nav">
+              <h3 class="rating__title-nav">SoftTail</h3><span class="rating__num-nav">8914</span>
+            </li>
+          </ul>
+        </nav>
+        <div class="container container--rating">
+          <ul class="rating__list">
+            <li class="rating__item"><img class="rating__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/rigid.jpg" alt="ratingImg">
+              <div class="rating__text-wrap">
+                <h3 class="rating__title">Rigid</h3>
+                <p class="rating__descr">Этот велосипед вообще не имеет амортизаторов. В качестве примера – шоссейники или BMX, на которые амортизаторы не ставятся в принципе. Как вариант, велосипедом без амортизаторов может оказаться и горный, в том случае, если это начальная модель, а также дорожный. Но чаще всего, амортизаторы отсутствуют либо в эконом-вариантах, либо же в специализированных спортивных аппаратах.</p>
+              </div>
+            </li>
+            <li class="rating__item"><img class="rating__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/hard-tail.jpg" alt="ratingImg">
+              <div class="rating__text-wrap">
+                <h3 class="rating__title">HardTail</h3>
+                <p class="rating__descr">В наличии передняя амортизационная вилка. Это наиболее популярный в наше время класс велосипедов, так как езда на нем будет более комфортная, а сам велосипед – более управляемый за счет наличия вилки, особенно если говорить о бездорожье. Ход вилки начинается от 30 и достигает 300мм, в зависимости от того, для чего предназначен велосипед.</p>
+              </div>
+            </li>
+            <li class="rating__item"><img class="rating__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/full-suspension.jpg" alt="ratingImg">
+              <div class="rating__text-wrap">
+                <h3 class="rating__title">Full Suspension</h3>
+                <p class="rating__descr">К этому классу относятся велосипеды с двумя амортизаторами — передним и задним. Модели могут быть самые разные – и комфортные городские, и сверхлегкие двухподвесы, имеющие малый ход амортизаторов для кросс-кантри, и тяжеленные байки для скоростных спусков («Down Hill»). Исходя из примеров, становится ясно, что чаще всего к третьему классу относятся специализированные спортивные велосипеды, либо же байки для комфортной, приятной езды на малые расстояния.</p>
+              </div>
+            </li>
+            <li class="rating__item"><img class="rating__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/soft-tail.jpg" alt="ratingImg">
+              <div class="rating__text-wrap">
+                <h3 class="rating__title">SoftTail</h3>
+                <p class="rating__descr">У софттейлов передняя амортизационная вилка, а перья заднего треугольника специальной геометрии, необходимой для большей амортизации. Бывает, что эти перья заменяют короткоходными амортизаторами. Данный класс велосипедов является очень дорогим, обычно это спортивные байки для кросс-кантри.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="map"></div>
+      <div class="partners">
+        <ul class="partner__list">
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/comanche.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/cube.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/giant.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/scott.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/trek.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/myProject/velo/PUG%20SASS/dist/img/lorak-trade.png" alt="partnersImg"></li>
+        </ul>
+      </div>
+      <button class="scroll-to-top"><i class="fas fa-caret-up"></i></button>
+    </div>
+    <footer class="footer" id="contant">
+      <div class="container">
+        <ul class="footer__wrap">
+          <li class="footer__contact">
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="">mail: ikorobka009@gmail.com</a></li>
+              <li class="footer__item"><a class="footer__link" href="">tel: +38(093) 009 03 78</a></li>
+              <li class="footer__item"><a class="footer__link" href="">GitHub: ikorobka.github.io</a></li>
+            </ul>
+          </li>
+          <li class="footer__form">
+            <form>
+              <input class="footer__input" placeholder="name">
+              <input class="footer__input" placeholder="phone">
+              <input class="footer__input" placeholder="email">
+              <button class="footer__btn">send</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsssbIX0BviZXqBouf7YBdOYFc4z6DoZA&amp;callback=initMap" async defer></script>
+  </body>
+</html>
