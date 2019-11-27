@@ -173,6 +173,6 @@ function initMap() {
     var marker = new google.maps.Marker({
         position: {lat: 40.689856, lng: -73.906263},
         map: map,
-        icon: 'https://ikorobka.github.io/finish/template/dist/img/map-marker.png'
+        icon: 'ilkrbk.github.io/test-template/dist/img/map-marker.png'
     });
 }
