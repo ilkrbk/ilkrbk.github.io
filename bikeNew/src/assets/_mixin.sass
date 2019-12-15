@@ -1,0 +1,21 @@
+@mixin font($weight, $fz, $color)
+    font-family: $basicFont, sans-serif
+    font-size: $fz
+    color: $color
+    font-weight: $weight
+
+@mixin extraSmallDevice
+    @media screen and (max-width: 450px) 
+        @content
+
+@mixin smallDevice 
+    @media screen and (max-width: 600px)
+        @content
+
+@mixin mediumDevice 
+    @media screen and (max-width: 900px) 
+        @content
+
+@mixin largeDevice 
+    @media screen and (max-width: 1200px) 
+        @content

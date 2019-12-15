@@ -1,0 +1,16 @@
+-
+    var img = [
+        "https://ilkrbk.github.io/bike/dist/img/comanche.png",
+        "https://ilkrbk.github.io/bike/dist/img/cube.png",
+        "https://ilkrbk.github.io/bike/dist/img/giant.png",
+        "https://ilkrbk.github.io/bike/dist/img/scott.png",
+        "https://ilkrbk.github.io/bike/dist/img/trek.png",
+        "https://ilkrbk.github.io/bike/dist/img/lorak-trade.png"
+    ]
+
+.partners
+    ul.partner__list
+        - for (let i = 0; i < img.lenght; i++)
+        each item in img
+            li.partners__item
+                img.partners__img(src= item alt="partnersImg")

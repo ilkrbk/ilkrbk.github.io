@@ -1,0 +1,79 @@
+*
+	box-sizing: border-box
+
+html, body
+	width: 100%
+	min-height: 100vh
+	display: flex
+	flex-flow: column nowrap
+	margin: 0
+	padding: 0
+
+.maincontent 
+	flex: 1 0
+
+ul, ol
+	list-style: none
+	padding: 0
+	margin: 0
+
+a
+	text-decoration: none
+	color: #000
+
+h1, h2, h3, h4, h5, h6, p
+	margin-bottom: 0
+	font-weight: normal
+	font-style: normal
+
+.container
+	margin: auto
+	display: flex
+	width: 1174px
+	@include largeDevice
+		width: 850px
+	@include mediumDevice
+		width: 550px
+	@include smallDevice
+		width: 100%
+
+#map
+	width: 100%
+	height: 400px
+
+.scroll-to-top
+	width: 50px
+	height: 50px
+	position: fixed
+	bottom: 50px
+	right: -100%
+	background: $basicBlue
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all .2s ease-in-out
+	cursor: pointer
+	z-index: 99
+	border: none
+	> i
+		color: $white
+		font-size: 2rem
+
+.scroll-to-top--active 
+	right: 50px
+
+.j-c-s-b
+	justify-content: space-between
+
+.j-c-s-a
+	justify-content: space-around
+
+.j-c-c
+	justify-content: center
+
+.f-d-c
+	flex-direction: column
+
+.a-i-c
+	align-items: center
