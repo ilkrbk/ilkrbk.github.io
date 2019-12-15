@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8">
+    <title>Home page
+    </title>
+    <meta name="author" content>
+    <meta name="description" content>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__wrap-icon-btn"><span class="header__icon-btn"></span></div>
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="about.html">Home</a></li>
+          <li class="header__item"><a class="header__link" href="photo.html">Gallery</a></li>
+          <li class="header__item"><a class="header__link" href="blog.html">Blog</a></li>
+          <li class="header__item"><a class="header__link" href="information.html">Information</a></li>
+          <li class="header__item"><a class="header__link" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="maincontent">
+      <div class="video" id="home">
+        <video class="video__video" autoplay muted loop poster="https://ilkrbk.github.io/bike/dist/img/video-bg.jpg">
+          <source src="https://ilkrbk.github.io/bike/dist/img/video-bg.mp4" type="video/mp4">
+          <source src="https://ilkrbk.github.io/bike/dist/img/video-bg.webm" type="video/webm">
+        </video>
+        <div class="video__text-wrap">
+          <h1 class="video__title">Biking extreme, sport, tourism.</h1>
+          <p class="video__descr">Сейчас трудно найти человека, который не хотел бы отправиться в путешествия — новые города, в которых вы никогда не бывали, прекрасные ландшафты и пейзажи, не такие как на Родине, могучие реки, поросшие цветами озёра, новые люди, впечатления, лица, уходящая вдаль дорога; и всё это — тонкая линия, начерченная вами на яркой карте.</p>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <div class="container f-d-c">
+          <h2 class="about__title">About</h2>
+          <p class="about__descr">Для нас очень важна деловая репутация — мы отвечаем за то, что продаем и стараемся идти клиенту навстречу в решении любых спорных ситуаций. Наши товары и услуги высоко оцениваются не только среди потребителей, но и в профессиональном кругу.</p>
+          <ul class="about__list">
+            <li class="about__item"><i class="about__icon fas fa-calendar-alt"></i>
+              <div class="about__text-wrap">
+                <h3 class="about__item-title">Blog</h3>
+                <p class="about__item-descr">Всех, кто имеет желание публиковать свои отчеты/записи в блогах на сайте — милости просим. </p>
+              </div>
+            </li>
+            <li class="about__item"><i class="about__icon fas fa-cog"></i>
+              <div class="about__text-wrap">
+                <h3 class="about__item-title">Service</h3>
+                <p class="about__item-descr">Помимо продажи мы осуществляем сервисное обслуживание. Купленный велосипед мы доставим вам в собранном и полностью настроенном виде.</p>
+              </div>
+            </li>
+            <li class="about__item"><i class="about__icon fas fa-shopping-cart"></i>
+              <div class="about__text-wrap">
+                <h3 class="about__item-title">shop</h3>
+                <p class="about__item-descr">Посмотрите стоимость байков и аксессуаров в нашем каталоге и Вы приятно удивитесь. </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="partners">
+        <ul class="partner__list">
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/bike/dist/img/comanche.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/bike/dist/img/cube.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/bike/dist/img/giant.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/bike/dist/img/scott.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/bike/dist/img/trek.png" alt="partnersImg"></li>
+          <li class="partners__item"><img class="partners__img" src="https://ilkrbk.github.io/bike/dist/img/lorak-trade.png" alt="partnersImg"></li>
+        </ul>
+      </div>
+      <button class="scroll-to-top"><i class="fas fa-caret-up"></i></button>
+    </div>
+    <footer class="footer" id="contant">
+      <div class="container">
+        <ul class="footer__wrap">
+          <li class="footer__contact">
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__link" href="">mail: ikorobka009@gmail.com</a></li>
+              <li class="footer__item"><a class="footer__link" href="">tel: +38(093) 009 03 78</a></li>
+              <li class="footer__item"><a class="footer__link" href="">GitHub: ikorobka.github.io</a></li>
+            </ul>
+          </li>
+          <li class="footer__form">
+            <form>
+              <input class="footer__input" placeholder="name">
+              <input class="footer__input" placeholder="phone">
+              <input class="footer__input" placeholder="email">
+              <button class="footer__btn">send</button>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
