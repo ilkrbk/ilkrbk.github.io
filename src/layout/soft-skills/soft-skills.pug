@@ -29,5 +29,9 @@ section.soft-skills
             - for(let i = 0; i < softSkills.length; ++i)
             each skill in softSkills 
                 li.soft-skills__item 
-                    span.soft-skills__value= skill.porcent
+                    .soft-skills__progress-bar
+                        svg.soft-skills__svg
+                            circle(cx="80" cy="80" r="65" stroke="#c4c4c4" stroke-width="15")
+                            circle.soft-skills__circle(cx="80" cy="80" r="65" stroke-width="20")
+                        span.soft-skills__value= skill.porcent
                     h3.soft-skills__title= skill.title
