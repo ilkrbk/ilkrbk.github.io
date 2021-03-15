@@ -1,0 +1,33 @@
+-
+    var softSkills = [
+        {
+            porcent: '90%',
+            title: 'Creativity'
+        },
+        {
+            porcent: '75%',
+            title: 'Teamwork'
+        },
+        {
+            porcent: '70%',
+            title: 'Leadership'
+        },
+        {
+            porcent: '65%',
+            title: 'Communication'
+        },
+        {
+            porcent: '60%',
+            title: 'Mentoring'
+        }
+    ]
+
+section.soft-skills 
+    .container.a-i-c.f-d-c
+        h2.soft-skills__title-main Soft Skills
+        ul.soft-skills__list 
+            - for(let i = 0; i < softSkills.length; ++i)
+            each skill in softSkills 
+                li.soft-skills__item 
+                    span.soft-skills__value= skill.porcent
+                    h3.soft-skills__title= skill.title
