@@ -1,0 +1,47 @@
+.main
+    height: 100vh
+    width: 100%
+    z-index: -2
+    position: relative
+    align-items: center
+    margin-top: -131px
+    background: url('../img/main-bg.jpg') 50% 50% no-repeat
+    background-size: cover
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        background: $overlay
+        position: absolute
+        top: 0
+        left: 0
+        z-index: -1
+
+.main__text-wrap 
+    display: flex
+    flex-direction: column
+    justify-content: center
+    width: 60%
+
+.main__title
+    margin-top: 0
+    @include font ($mainFont, 6rem, $white)
+
+.main__subtitle
+    margin-top: 0
+    width: 380px
+    @include font ($basicFont, 2.25rem, $white)
+    font-weight: 300
+
+.main__img-wrap
+    display: flex
+    align-items: flex-end
+    height: 100vh
+    width: 40%
+
+.main__img
+    width: 120%
+    
+
+
+
