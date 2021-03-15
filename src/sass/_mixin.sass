@@ -3,6 +3,14 @@
     font-size: $fz
     color: $color
 
+@mixin btn ($fz, $color, $bg, $padding)
+    @include font ($basicFont, $fz, $color)
+    text-transform: uppercase
+    padding: $padding
+    background: $bg
+    font-weight: 300
+    border-radius: 50px
+
 @mixin extraSmallDevice
     @media screen and (max-width: 450px) 
         @content

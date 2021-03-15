@@ -1,1 +1,25 @@
+-
+    var pages = [
+        {
+            link: '#',
+            title: 'Say Hello'
+        },
+        {
+            link: 'portholio.html',
+            title: 'Portfolio'
+        },
+        {
+            link: 'blog.html',
+            title: 'Blog'
+        }
+    ]
+
 header.header 
+    nav.header__nav 
+        img.header__logo(src="img/box.svg", alt="", srcset="")
+        ul.header__list 
+            - for (var k = 0; k < pages.length; ++k)
+            each page in pages
+                li.header__item 
+                    a.header__link(href= page.link)= page.title
+    a.header__btn Download CV
