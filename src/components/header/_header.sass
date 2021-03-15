@@ -31,7 +31,7 @@
     text-transform: uppercase
     font-weight: 300
     transition: all .1s ease-in-out
-    @include font ($basicFont, 1.5rem, $white)
+    @include font ($basicFont, $smallText, $white)
     &:hover
         background: $blue
 
@@ -39,4 +39,4 @@
     background: $blue
 
 .header__btn
-    @include btn (2.25rem, $white, $blue, 18px 34px)
+    @include btn ($mediumText, $white, $blue, 18px 34px, none)

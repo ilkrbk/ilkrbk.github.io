@@ -3,12 +3,13 @@
     font-size: $fz
     color: $color
 
-@mixin btn ($fz, $color, $bg, $padding)
+@mixin btn ($fz, $color, $bg, $padding, $border)
     @include font ($basicFont, $fz, $color)
     text-transform: uppercase
     padding: $padding
     background: $bg
     font-weight: 300
+    border: $border
     border-radius: 50px
 
 @mixin extraSmallDevice
