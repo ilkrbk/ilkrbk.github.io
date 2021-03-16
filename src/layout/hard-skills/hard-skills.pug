@@ -1,0 +1,75 @@
+-
+    var hardSkills = [
+        {
+            porcent: '85%',
+            title: 'Sass'
+        },
+        {
+            porcent: '95%',
+            title: 'html'
+        },
+        {
+            porcent: '95%',
+            title: 'css'
+        },
+        {
+            porcent: '70%',
+            title: 'javascript'
+        },
+        {
+            porcent: '65%',
+            title: 'gulp'
+        },
+        {
+            porcent: '85%',
+            title: 'c#'
+        },
+        {
+            porcent: '40%',
+            title: 'node.js'
+        },
+        {
+            porcent: '65%',
+            title: 'swift'
+        },
+        {
+            porcent: '50%',
+            title: 'python'
+        },
+        {
+            porcent: '80%',
+            title: 'git'
+        },
+        {
+            porcent: '65%',
+            title: 'photoshop'
+        },
+        {
+            porcent: '55%',
+            title: 'c++'
+        },
+        {
+            porcent: '80%',
+            title: 'pug'
+        },
+        {
+            porcent: '90%',
+            title: 'postgresql'
+        },
+        {
+            porcent: '70%',
+            title: 'linux'
+        }
+    ]
+
+section.hard-skills 
+    .container.a-i-c.f-d-c
+        h2.hard-skills__title-main Hard Skills
+        ul.hard-skills__list 
+            - for(let i = 0; i < hardSkills.length; ++i)
+            each skill in hardSkills 
+                li.hard-skills__item 
+                    +progressBar(skill.porcent, '#017cea')
+                    h3.hard-skills__title= skill.title
+        a.hard-skills__btn download cv
+        
