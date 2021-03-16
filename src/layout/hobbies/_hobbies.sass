@@ -1,8 +1,5 @@
 .hobbies
-    background: $black
     padding: 0 0 100px 0
-    position: relative
-    @include lineBottom (30%)
     &::before
         content: ''
         width: 130%
@@ -13,41 +10,6 @@
         left: -200px
         transform: rotate(-7deg)
         z-index: -1
-
-.hobbies__title
-    margin-top: 0
-    @include font ($mainFont, $largeTitle, $white)
-
-.hobbies__list 
-    margin-top: 60px
-    display: flex
-    width: 100%
-    justify-content: space-between
-
-.hobbies__item
-    width: 25%
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: space-between
-    position: relative
-    &::after
-        content: ''
-        height: 100%
-        width: 1px
-        position: absolute
-        top: 0
-        left: 0
-        background: $white
-    &:last-child
-        &::before
-            content: ''
-            height: 100%
-            width: 1px
-            position: absolute
-            top: 0
-            right: 0
-            background: $white
 
 .hobbies_icon
     color: $lightGreen

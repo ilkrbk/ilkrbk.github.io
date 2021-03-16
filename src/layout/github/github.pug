@@ -1,34 +1,32 @@
--
-    var github = [
-        {
-            iconClass: 'fa-star',
-            value: '1024',
-            title: 'contributors'
-        },
-        {
-            iconClass: 'fa-star',
-            value: '6429',
-            title: 'stars'
-        },
-        {
-            iconClass: 'fa-star',
-            value: '120',
-            title: 'repositories'
-        },
-        {
-            iconClass: 'fa-star',
-            value: '21',
-            title: 'languages'
-        },
-    ]
+extends ../../components/info-static/info-static.pug
+block value
+    -
+        var list = [
+            {
+                iconClass: 'fa-star',
+                value: '1024',
+                title: 'contributors'
+            },
+            {
+                iconClass: 'fa-star',
+                value: '6429',
+                title: 'stars'
+            },
+            {
+                iconClass: 'fa-star',
+                value: '120',
+                title: 'repositories'
+            },
+            {
+                iconClass: 'fa-star',
+                value: '21',
+                title: 'languages'
+            },
+        ]
 
-section.github 
-    .container.a-i-c.f-d-c
-        h2.github__title Github
-        ul.github__list 
-            - for(let i = 0; i < github.length; ++i)
-            each item in github
-                li.github__item
-                    span.github__value= item.value
-                    i.fas.github_icon(class= item.iconClass)
-                    h3.descr= item.title
+block title 
+    | Github
+block item 
+    span.github__value= item.value
+    i.fas.github_icon(class= item.iconClass)
+    h3.github__descr= item.title
