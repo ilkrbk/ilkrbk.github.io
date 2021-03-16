@@ -1,0 +1,56 @@
+-
+    var educations = [
+        {
+            title: "University",
+            descr: "Technical University of Ukraine. KPI",
+            date: "SEPTEMBER 2019 - JULY 2023"
+        },
+        {
+            title: "Udemy",
+            descr: "Swift",
+            date: "January 2019 - March 2020"
+        },
+        {
+            title: "Beetroot Academy",
+            descr: "Front-End Developer",
+            date: "August 2017 - January 2018"
+        }
+    ]
+
+-
+    var experiences = [
+        {
+            title: "System Administrator",
+            descr: "Dolphinarium Nemo",
+            date: "JUNE 2020 - SEPTEMBER 2020"
+        },
+        {
+            title: "Photographer",
+            descr: "Dolphinarium Nemo",
+            date: "JUNE 2019 - SEPTEMBER 2019"
+        },
+    ]
+
+section.educ-exper
+    .container.f-d-c
+        h2.educ-exper__title 
+            | Educations Experiences
+        .educ-exper__wrap-lists
+            ul.educ__list 
+                - for(let i = 0; i < educations.length; ++i)
+                each educ in educations
+                    li.educ__item
+                        span.educ__icon
+                            i.fas.fa-user-graduate
+                        span.educ__date= educ.date
+                        h3.educ__title= educ.title
+                        p.educ__descr= educ.descr
+            ul.exper__list 
+                - for(let i = 0; i < experiences.length; ++i)
+                each exper in experiences
+                    li.exper__item
+                        span.exper__icon
+                            i.fas.fa-id-card-alt
+                        span.exper__date= exper.date
+                        h3.exper__title= exper.title
+                        p.exper__descr= exper.descr

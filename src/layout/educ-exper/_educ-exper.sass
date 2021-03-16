@@ -1,0 +1,80 @@
+.educ-exper
+    background: $black
+    position: relative
+    padding: 100px 0 0 0;
+    &::before
+        content: ''
+        width: 130%
+        height: 450px
+        background: $black
+        position: absolute
+        bottom: -85px
+        left: -200px
+        transform: rotate(-7deg)
+        z-index: -1
+
+.educ-exper__title
+    display: flex
+    margin-top: 0
+    justify-content: center
+    @include font ($mainFont, 5rem, $white)
+
+.educ-exper__wrap-lists
+    display: flex
+
+.educ__list, .exper__list
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+    width: 50%
+
+.educ__item, .exper__item
+    margin-top: 50px
+    padding: 0 0 0 90px
+    position: relative
+    &:first-child
+        margin-top: 0
+
+.educ__icon, .exper__icon
+    position: absolute
+    top: 0
+    left: 0
+    border-radius: 50%
+    background: $lightGreen
+    width: 60px
+    height: 60px
+    display: flex
+    justify-content: center
+    align-items: center
+    > i 
+        font-size: 1.8rem
+        color: $black
+    &::before
+        content: ''
+        width: 1px
+        height: 100%
+        background: $white
+        position: absolute
+        top: 100%
+        left: 50%
+
+
+.educ__date, .exper__date
+    display: inline-block
+    background: $darkGrey
+    border-radius: 15px
+    padding: 7px 10px
+    font-weight: 700
+    text-transform: uppercase
+    @include font ($basicFont, $subscribe, $white)
+
+.educ__title, .exper__title
+    margin-top: 40px
+    font-weight: 700
+    text-transform: uppercase
+    @include font ($basicFont, $mediumText, $white)
+
+.educ__descr, .exper__descr
+    margin-top: 10px
+    text-transform: uppercase
+    @include font ($basicFont, $smallText, $white)
