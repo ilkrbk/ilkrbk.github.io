@@ -1,0 +1,29 @@
+-
+    var github = [
+        {
+            iconClass: 'fa-bicycle',
+            title: 'bicycle'
+        },
+        {
+            iconClass: 'fa-chess',
+            title: 'logic games'
+        },
+        {
+            iconClass: 'fa-hiking',
+            title: 'tourism'
+        },
+        {
+            iconClass: 'fa-code',
+            title: 'code'
+        },
+    ]
+
+section.hobbies 
+    .container.a-i-c.f-d-c
+        h2.hobbies__title hobbies
+        ul.hobbies__list 
+            - for(let i = 0; i < github.length; ++i)
+            each item in github
+                li.hobbies__item
+                    i.fas.hobbies_icon(class= item.iconClass)
+                    h3.hobbies__descr= item.title
