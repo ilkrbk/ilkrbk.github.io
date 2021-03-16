@@ -1,0 +1,11 @@
+block value
+
+section.info-static 
+    .container.a-i-c.f-d-c
+        h2.info-static__title 
+            block title
+        ul.info-static__list 
+            - for(let i = 0; i < list.length; ++i)
+            each item in list
+                li.info-static__item
+                    block item
