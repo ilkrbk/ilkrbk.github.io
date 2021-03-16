@@ -1,3 +1,14 @@
+@mixin lineBottom ($width)
+    &::after
+        content: ''
+        height: 1px
+        width: $width
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translateX(-50%)
+        background: $white
+    
 @mixin font ($font, $fz, $color)
     font-family: $font, sans-serif
     font-size: $fz

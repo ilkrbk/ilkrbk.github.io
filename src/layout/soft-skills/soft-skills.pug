@@ -30,5 +30,5 @@ section.soft-skills
             - for(let i = 0; i < softSkills.length; ++i)
             each skill in softSkills 
                 li.soft-skills__item 
-                    +progressBar(skill.porcent)
+                    +progressBar(skill.porcent, '#E4FF1A')
                     h3.soft-skills__title= skill.title
