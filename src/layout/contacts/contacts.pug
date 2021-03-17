@@ -1,0 +1,40 @@
+-
+    var networks = [
+        {
+            link: "",
+            icon: "fa-github"
+        },
+        {
+            link: "",
+            icon: "fa-linkedin-in"
+        },
+        {
+            link: "",
+            icon: "fas fa-paper-plane"
+        },
+        {
+            link: "",
+            icon: "fa-facebook-square"
+        },
+        {
+            link: "",
+            icon: "fa-slack"
+        },
+    ]
+
+section.contacts
+    .container.j-c-c.a-i-c.f-d-c
+        .contacts__title Contacts
+        .contacts__text-wrap
+            .contacts__btns-wrap 
+                a.contacts__btn call
+                a.contacts__btn write
+            h3.contacts__subtitle 
+                | Social Networks
+            ul.contacts__list 
+                - for(let i = 0; i < networks.list; ++i)
+                each item in networks
+                    li.contacts__item
+                        a.contacts__net-link(href= item.link)
+                            i.fab(class= item.icon)
+        a.contacts__link Download cv
