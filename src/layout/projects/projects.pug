@@ -1,0 +1,28 @@
+-
+    var nav = [
+        {
+            value: "",
+            text: "web desing"
+        },
+        {
+            value: "",
+            text: "web site"
+        },
+        {
+            value: "",
+            text: "algorithm"
+        },
+        {
+            value: "",
+            text: "application"
+        }
+    ]
+
+section.projects 
+    .container
+        nav.projects__nav 
+            ul.projects__list 
+                - for(let i = 0; i < nav.length; ++i)
+                each item in nav
+                    li.projects__item
+                        button.projects__btn(type='submit')= item.text
