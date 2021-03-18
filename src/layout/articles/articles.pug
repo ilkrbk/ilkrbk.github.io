@@ -1,0 +1,56 @@
+include ../../components/article/article.pug
+
+-
+    var articles = [
+        {
+            title: "Bee colony",
+            descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
+            date: "10.02.2021",
+            like: "11",
+            img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
+        },
+        {
+            title: "Bee colony",
+            descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
+            date: "10.02.2021",
+            like: "11",
+            img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
+        },
+        {
+            title: "Bee colony",
+            descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
+            date: "10.02.2021",
+            like: "11",
+            img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
+        },
+        {
+            title: "Bee colony",
+            descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
+            date: "10.02.2021",
+            like: "11",
+            img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
+        },
+        {
+            title: "Bee colony",
+            descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
+            date: "10.02.2021",
+            like: "11",
+            img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
+        },
+        {
+            title: "Bee colony",
+            descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
+            date: "10.02.2021",
+            like: "11",
+            img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
+        }
+    ]
+
+section.articles 
+    .container.f-d-c.j-c-c.a-i-c
+        ul.articles__list
+            - for(let i = 0; i < articles.length; ++i)
+            each item in articles
+                +article(item.title, item.descr, item.img[0], item.img[1], item.img[2], item.date, item.like)
+        a.articles__btn
+            | download cv 
