@@ -1,0 +1,9 @@
+extends ../template.pug
+include ../components/top-block/top-block.pug
+
+block title
+    | Portfolio
+
+block content
+    +tobBlockInPageContainer("Portfolio")
+    include projects/projects.pug
