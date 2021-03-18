@@ -1,0 +1,18 @@
+mixin article(title, descr, img1, img2, img3, date, like)
+    li.article 
+        ul.article-img__list 
+            li.article-img__item
+                img.article__img(src= img1)
+            li.article-img__item
+                img.article__img(src= img2)
+            li.article-img__item
+                img.article__img(src= img3)
+        h3.article__title= title
+        p.article__descr= descr
+        .article__panel
+            .article__date-wrap
+                i.article__date-icon.fas.fa-calendar-alt
+                span.article__date= date
+            .article__like-wrap
+                span.article__like= like
+                i.article__like-icon.far.fa-heart
