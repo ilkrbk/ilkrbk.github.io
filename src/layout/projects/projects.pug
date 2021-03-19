@@ -1,3 +1,4 @@
+include ../../components/portfolio-article/portfolio-article.pug
 -
     var nav = [
         {
@@ -50,11 +51,6 @@ section.projects
         ul.projects-article__list
             - for(let i = 0; i < articles.length; ++i)
             each article in articles
-                li.projects-article__item
-                    .projects-article__text
-                        h3.projects-article__title= article.title
-                        p.projects-article__descr= article.descr
-                        a.projects-article__link(href= article.link) more
-                    img.projects-article__img(src= article.img)
+                +portfolioArticle(article.title, article.descr, article.img, article.link)
         a.projects-articles__btn
             | download cv 

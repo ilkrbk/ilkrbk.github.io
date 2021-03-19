@@ -1,0 +1,7 @@
+mixin portfolioArticle(title, descr, img, link)
+    li.portfolio-article__item
+        .portfolio-article__text
+            h3.portfolio-article__title= title
+            p.portfolio-article__descr= descr
+            a.portfolio-article__link(href= link) more
+        img.portfolio-article__img(src= img)
