@@ -1,4 +1,4 @@
-include ../../components/article/article.pug
+include ../../components/blog-article/blog-article.pug
 
 -
     var articles = [
@@ -51,6 +51,6 @@ section.articles
         ul.articles__list
             - for(let i = 0; i < articles.length; ++i)
             each item in articles
-                +article(item.title, item.descr, item.img[0], item.img[1], item.img[2], item.date, item.like)
+                +blogArticle(item.title, item.descr, item.img[0], item.img[1], item.img[2], item.date, item.like)
         a.articles__btn
             | download cv 
