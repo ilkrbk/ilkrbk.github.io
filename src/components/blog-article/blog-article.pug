@@ -1,0 +1,18 @@
+mixin blogArticle(title, descr, img1, img2, img3, date, like)
+    li.blog-article 
+        ul.blog-article-img__list 
+            li.blog-article-img__item
+                img.blog-article__img(src= img1)
+            li.blog-article-img__item
+                img.blog-article__img(src= img2)
+            li.blog-article-img__item
+                img.blog-article__img(src= img3)
+        h3.blog-article__title= title
+        p.blog-article__descr= descr
+        .blog-article__panel
+            .blog-article__date-wrap
+                i.blog-article__date-icon.fas.fa-calendar-alt
+                span.blog-article__date= date
+            .blog-article__like-wrap
+                span.blog-article__like= like
+                i.blog-article__like-icon.far.fa-heart

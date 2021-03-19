@@ -1,4 +1,4 @@
-.article
+.blog-article
     display: flex
     flex-direction: column
     background: $lightGrey
@@ -17,11 +17,11 @@
         margin-right: 0
         margin-left: auto
 
-.article-img__list 
+.blog-article-img__list 
     display: flex
     justify-content: space-between
 
-.article-img__item
+.blog-article-img__item
     overflow: hidden
     margin-right: 30px
     height: 200px
@@ -30,20 +30,20 @@
     &:last-child
         margin-right: 0
 
-.article__img
+.blog-article__img
     width: 100%
     height: 100%
     object-fit: cover
 
-.article__title
+.blog-article__title
     margin-top: 30px
     @include font ($mainFont, $mediumText, $black)
 
-.article__descr
+.blog-article__descr
     margin-top: 10px
     @include font ($basicFont, $ultraSmallText, $black)
 
-.article__panel
+.blog-article__panel
     border-radius: 0 0 10px 10px
     padding: 15px
     display: flex
@@ -55,19 +55,19 @@
     width: 90%
     background: $blue
 
-.article__date-icon
+.blog-article__date-icon
     color: $white
 
-.article__like-icon
+.blog-article__like-icon
     color: $white
     font-size: $ultraSmallText
 
-.article__like
+.blog-article__like
     font-weight: 700
     margin-right: 10px
     @include font ($basicFont, $ultraSmallText, $white)
 
-.article__date
+.blog-article__date
     font-weight: 700
     margin-left: 10px
     @include font ($basicFont, $ultraSmallText, $white)
