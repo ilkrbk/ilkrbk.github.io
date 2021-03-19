@@ -1,0 +1,10 @@
+extends ../template.pug
+include ../components/top-block/top-block.pug
+
+block title
+    | blog
+
+block content
+    +tobBlockInPageContainer("Blog")
+    include sort-block/sort-block.pug
+    include articles/articles.pug
