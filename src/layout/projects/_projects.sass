@@ -1,7 +1,9 @@
 .projects
+    background: $lightGrey
     position: relative
     overflow: hidden
     padding: 0 0 100px 0
+    z-index: 0
     &::after
         content: ''
         width: 130%
@@ -37,9 +39,10 @@
 .projects-article__list
     width: 100%
     display: flex
-    flex-direction: column
-    margin-top: 50px
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 90px
 
 .projects-articles__btn
-    margin-top: 50px
+    margin-top: 111px
     @include btn ($mediumText, $white, $red, 18px 34px, none)
