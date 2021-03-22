@@ -1,6 +1,6 @@
 .contacts
     position: relative
-    z-index: -3
+    z-index: 0
     padding: 100px 0
     background: url(../img/contacts-bg.jpg)
     background-size: cover
@@ -30,6 +30,7 @@
     justify-content: space-between
 
 .contacts__btn
+    border: 1px solid transparent
     display: flex
     justify-content: center
     padding: 20px 0
@@ -39,7 +40,12 @@
     border-radius: 45px
     text-transform: uppercase
     font-weight: 300
+    transition: all ease-in .3s
     @include font ($basicFont, $smallText, $black)
+    &:hover
+        background: none
+        border: 1px solid $lightGreen
+        color: $lightGreen
 
 .contacts__subtitle
     text-align: center
@@ -55,6 +61,7 @@
     justify-content: space-between
 
 .contacts__net-link
+    border: 1px solid transparent
     display: flex
     width: 63px
     height: 63px
@@ -62,9 +69,19 @@
     align-items: center
     background: $lightGreen
     border-radius: 50%
+    transition: all ease-in .3s
     > i
         font-size: 2rem
+    &:hover
+        background: none
+        border: 1px solid $lightGreen
+        color: $lightGreen
 
 .contacts__link
     margin-top: 100px
     @include btn ($mediumText, $black, $lightGreen, 18px 34px, none)
+
+.b-c
+    &:hover
+        border: 1px solid $lightGreen
+        color: $lightGreen
