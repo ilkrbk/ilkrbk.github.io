@@ -21,22 +21,44 @@ include ../../components/portfolio-article/portfolio-article.pug
 -
     var articles = [
         {
+            title: "Men's club",
+            descr: "Lmet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, ",
+            img: "img/mens-club.png",
+            link: "",
+            tags: ["html", "css", "javascript", "ajax"],
+            images: ["img/mens-club.png", "img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png"]
+        },
+        {
+            title: "Barbershop",
+            descr: "Lorem ip elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione e",
+            img: "img/barbershop.png",
+            link: "",
+            tags: ["html", "css"],
+            images: ["img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png"]
+        },
+        {
+            title: "Template",
+            descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+            img: "img/template.png",
+            link: "",
+            tags: ["html", "css", "javascript"],
+            images: ["img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png"]
+        },
+        {
+            title: "John Doe",
+            descr: "Lmet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, ",
+            img: "img/john-doe.png",
+            link: "",
+            tags: ["html", "css", "javascript", "ajax"],
+            images: ["img/mens-club.png", "img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png"]
+        },
+        {
             title: "Bike",
-            descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?",
-            img: "img/article-bike.png",
-            link: ""
-        },
-        {
-            title: "barbershop",
-            descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?",
-            img: "img/article-barbershop.png",
-            link: ""
-        },
-        {
-            title: "template",
-            descr: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?",
-            img: "img/article-template.png",
-            link: ""
+            descr: "Lorem ip elit. Odit, iure quod in ratione eveniet, neque dicta, labore omnis optio placeat ipsam adipisci exercitationem eius delectus similique explicabo! Alias, ducimus itaque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iure quod in ratione e",
+            img: "img/bike.png",
+            link: "",
+            tags: ["html", "css"],
+            images: ["img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png", "img/article-barbershop.png"]
         }
     ]
 
@@ -51,6 +73,6 @@ section.projects
         ul.projects-article__list
             - for(let i = 0; i < articles.length; ++i)
             each article in articles
-                +portfolioArticle(article.title, article.descr, article.img, article.link)
+                +portfolioArticle(article.title, article.descr, article.img, article.link, article.tags, article.images)
         a.projects-articles__btn
             | download cv 
