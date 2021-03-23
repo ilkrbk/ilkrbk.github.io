@@ -12,13 +12,21 @@
         left: -200px
         transform: rotate(-7deg)
         z-index: -1
+    @include mediumDevice 
+        padding: 0 0 30px 0
+        &::after
+            left: -100px
 
 .articles__list
     margin-top: 50px
     display: flex
     flex-wrap: wrap
     width: 100%
+    @include mediumDevice 
+        margin-top: 20px
 
 .articles__btn
     margin-top: 100px
-    @include btn ($mediumText, $white, $blue, 18px 34px, none)
+    @include btn ($white, $blue, none)
+    @include largeDevice
+        margin-top: 80px

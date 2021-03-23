@@ -18,7 +18,19 @@
         top: 0
         left: 0
         z-index: -1
+    @include largeDevice
+        margin-top: -92px
+        height: 65vh
+    @include mediumDevice
+        margin-top: -76px
+    @include extraSmallDevice
+        margin-top: -67px
 
 .top-block__title
     margin-top: 0
     @include font ($mainFont, $largeTitle, $white)
+    @include largeDevice
+        font-size: 4rem
+    @include mediumDevice
+        font-size: 3rem
+        

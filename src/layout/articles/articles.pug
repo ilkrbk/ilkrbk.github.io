@@ -3,7 +3,7 @@ include ../../components/blog-article/blog-article.pug
 -
     var articles = [
         {
-            link: "",
+            link: "./article-bee-colony.html",
             title: "Bee colony",
             descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
             date: "10.02.2021",
@@ -11,7 +11,7 @@ include ../../components/blog-article/blog-article.pug
             img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
         },
         {
-            link: "",
+            link: "./article.html",
             title: "Bee colony",
             descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
             date: "10.02.2021",
@@ -19,7 +19,7 @@ include ../../components/blog-article/blog-article.pug
             img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
         },
         {
-            link: "",
+            link: "./article.html",
             title: "Bee colony",
             descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
             date: "10.02.2021",
@@ -27,7 +27,7 @@ include ../../components/blog-article/blog-article.pug
             img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
         },
         {
-            link: "",
+            link: "./article.html",
             title: "Bee colony",
             descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
             date: "10.02.2021",
@@ -35,7 +35,7 @@ include ../../components/blog-article/blog-article.pug
             img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
         },
         {
-            link: "",
+            link: "./article.html",
             title: "Bee colony",
             descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
             date: "10.02.2021",
@@ -43,7 +43,7 @@ include ../../components/blog-article/blog-article.pug
             img: ['img/article-1-img-1.jpeg','img/article-1-img-2.jpeg','img/article-1-img-3.png']
         },
         {
-            link: "",
+            link: "./article.html",
             title: "Bee colony",
             descr: "lorem nidaw daopwmn esiuf esiuui pog tdug efuesibe aueaid usbu e eisubfiuefr wopecnyr cpaebsbsyf ...",
             date: "10.02.2021",
@@ -57,6 +57,6 @@ section.articles
         ul.articles__list
             - for(let i = 0; i < articles.length; ++i)
             each item in articles
-                +blogArticle(item.title, item.descr, item.img[0], item.img[1], item.img[2], item.date, item.like)
+                +blogArticle(item.link, item.title, item.descr, item.img[0], item.img[1], item.img[2], item.date, item.like)
         a.articles__btn
             | download cv 
