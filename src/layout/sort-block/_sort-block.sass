@@ -3,9 +3,23 @@
     margin-top: 50px
     display: flex
     justify-content: space-between
+    @include mediumDevice
+        margin-top: 20px
+        flex-wrap: wrap
 
 .sort-block__form-search
     width: 70%
+    @include largeDevice
+        width: 65%
+    @include mediumDevice
+        width: 100%
+
+.sort-block__form-sort
+    @include largeDevice
+        width: 30%
+    @include mediumDevice
+        margin-top: 20px
+        width: 100%
 
 .sort-block__search
     width: 100%
@@ -14,6 +28,8 @@
     justify-content: space-between
     position: relative
     background: $lightGrey
+    @include mediumDevice
+        border-radius: 40px
 
 .sort-block__icon
     position: absolute
@@ -22,6 +38,14 @@
     transform: translate(0, -50%)
     color: $darkGrey
     font-size: 1.5rem
+    @include largeDevice
+        font-size: 1rem
+        left: 20px
+    @include mediumDevice
+        width: 100%
+    @include extraSmallDevice
+        left: 10px
+        font-size: 0.8rem
 
 .sort-block__input
     width: 100%
@@ -33,6 +57,19 @@
     @include font ($basicFont, 1.125rem, $darkGrey)
     &::placeholder 
         @include font ($basicFont, 1.125rem, $darkGrey)
+    @include largeDevice
+        padding: 15px 15px 15px 59px
+        font-size: 1rem
+        &::placeholder
+            font-size: 1rem
+    @include mediumDevice
+        padding: 15px 15px 15px 45px
+    @include extraSmallDevice
+        padding: 15px 15px 15px 30px
+        font-size: 0.8rem
+        &::placeholder
+            font-size: 0.8rem
+
 
 .sort-block__button
     font-weight: 700
@@ -42,6 +79,14 @@
     padding: 0 80px
     border: none
     background: $blue
+    @include largeDevice
+        font-size: 1rem
+        padding: 0 30px
+    @include mediumDevice
+        border-radius: 0 40px 40px 0
+    @include extraSmallDevice
+        font-size: 0.8rem
+        padding: 0 20px
 
 .sort-block__sort
     width: 100%
@@ -50,12 +95,24 @@
     justify-content: space-between
     position: relative
     background: $lightGrey
+    @include mediumDevice
+        border-radius: 40px
+        background: $blue
 
 .sort-block__label 
     padding: 28px 28px 28px 28px
     font-weight: 700
     text-transform: uppercase
     @include font ($basicFont, 1.125rem, $darkGrey)
+    @include largeDevice
+        font-size: 1rem
+        padding: 15px
+    @include mediumDevice
+        color: $white
+        padding-left: 45px
+    @include extraSmallDevice
+        font-size: 0.8rem
+        padding-left: 30px
 
 .sort-block__select
     font-weight: 700
@@ -66,3 +123,13 @@
     border: none
     background: $blue
     appearance: none
+    @include largeDevice
+        font-size: 1rem
+        padding: 0 20px
+    @include mediumDevice
+        display: flex
+        width: 50%  
+        border-radius: 0 40px 40px 0
+        border-left: 1px solid $white
+    @include extraSmallDevice
+        font-size: 0.8rem
