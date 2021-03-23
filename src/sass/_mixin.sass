@@ -14,22 +14,6 @@
     font-size: $fz
     color: $color
 
-@mixin btn ($fz, $color, $bg, $padding, $border)
-    @include font ($basicFont, $fz, $color)
-    position: relative
-    text-transform: uppercase
-    padding: $padding
-    background: $bg
-    font-weight: 300
-    border: 1px solid $bg
-    border-radius: 50px
-    transition: all ease-in-out .3s
-    cursor: pointer
-    z-index: 99
-    &:hover
-        border: 1px solid $color
-        background: none
-
 @mixin extraSmallDevice
     @media screen and (max-width: 450px) 
         @content
@@ -45,3 +29,25 @@
 @mixin largeDevice 
     @media screen and (max-width: 1240px) 
         @content
+
+@mixin btn ($color, $bg, $border)
+    @include font ($basicFont, $mediumText, $color)
+    position: relative
+    text-transform: uppercase
+    padding: 18px 34px
+    background: $bg
+    font-weight: 300
+    border: 1px solid $bg
+    border-radius: 50px
+    transition: all ease-in-out .3s
+    cursor: pointer
+    z-index: 99
+    &:hover
+        border: 1px solid $color
+        background: none
+    @include largeDevice
+        font-size: 2rem
+        padding: 8px 22px
+    @include extraSmallDevice
+        font-size: 1.5rem
+        padding: 8px 16px
