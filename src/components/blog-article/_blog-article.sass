@@ -14,12 +14,25 @@
     &:nth-child(2n)
         margin-right: 0
         margin-left: auto
+    @include mediumDevice 
+        margin-top: 100px
+        width: 100%
+        &:nth-child(1)
+            margin-top: 0
+        &:nth-child(2)
+            margin-top: 100px
 
 .blog-article-link-wrap
     display: flex
     flex-direction: column
     padding: 30px
     cursor: pointer
+    @include largeDevice
+        padding: 20px
+    @include mediumDevice 
+        padding: 30px
+    @include extraSmallDevice
+        padding: 15px
 
 .blog-article-img__list 
     display: flex
@@ -33,6 +46,15 @@
     border-radius: 10px
     &:last-child
         margin-right: 0
+    @include largeDevice
+        margin-right: 20px
+        height: 150px
+    @include mediumDevice 
+        margin-right: 30px
+        height: 200px
+    @include extraSmallDevice
+        margin-right: 15px
+        height: 100px
 
 .blog-article__img
     width: 100%
@@ -42,10 +64,25 @@
 .blog-article__title
     margin-top: 30px
     @include font ($mainFont, $mediumText, $black)
+    @include largeDevice
+        margin-top: 20px
+        font-size: 2rem
+    @include mediumDevice 
+        margin-top: 30px
+        font-size: $mediumText
+    @include extraSmallDevice
+        margin-top: 15px
+        font-size: 2rem
 
 .blog-article__descr
     margin-top: 10px
     @include font ($basicFont, $ultraSmallText, $black)
+    @include largeDevice
+        font-size: 1rem
+    @include mediumDevice 
+        font-size: $ultraSmallText
+    @include extraSmallDevice
+        font-size: 1rem
 
 .blog-article__panel
     box-shadow: 0 5px 10px rgba(0,0,0,0.3)
@@ -66,13 +103,31 @@
 .blog-article__like-icon
     color: $white
     font-size: $ultraSmallText
+    @include largeDevice
+        font-size: 1rem
+    @include mediumDevice 
+        font-size: $ultraSmallText
+    @include extraSmallDevice
+        font-size: 1rem
 
 .blog-article__like
     font-weight: 700
     margin-right: 10px
     @include font ($basicFont, $ultraSmallText, $white)
+    @include largeDevice
+        font-size: 1rem
+    @include mediumDevice 
+        font-size: $ultraSmallText
+    @include extraSmallDevice
+        font-size: 1rem
 
 .blog-article__date
     font-weight: 700
     margin-left: 10px
     @include font ($basicFont, $ultraSmallText, $white)
+    @include largeDevice
+        font-size: 1rem
+    @include mediumDevice 
+        font-size: $ultraSmallText
+    @include extraSmallDevice
+        font-size: 1rem

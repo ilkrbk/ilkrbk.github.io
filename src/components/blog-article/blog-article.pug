@@ -1,6 +1,6 @@
 mixin blogArticle(link, title, descr, img1, img2, img3, date, like)
     li.blog-article 
-        a.blog-article-link-wrap= link
+        a.blog-article-link-wrap(href= link)
             ul.blog-article-img__list 
                 li.blog-article-img__item
                     img.blog-article__img(src= img1)
