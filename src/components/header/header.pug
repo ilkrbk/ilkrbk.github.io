@@ -17,6 +17,9 @@
 header.header 
     nav.header__nav 
         img.header__logo(src="img/box.svg", alt="", srcset="")
+        input.header__input(type="checkbox" id="checkbox")
+        label.header__label(for="checkbox")
+            i.fas.fa-ellipsis-v
         ul.header__list 
             - for (var k = 0; k < pages.length; ++k)
             each page in pages

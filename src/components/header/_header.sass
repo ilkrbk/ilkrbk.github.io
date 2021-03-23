@@ -6,6 +6,12 @@
     border: solid 1px $white
     border-radius: 50px
     margin-top: 30px
+    @include largeDevice
+        margin-top: 20px
+        padding: 8px
+    @include mediumDevice
+        margin-top: 10px
+        padding: 5px
 
 .header__nav
     display: flex
@@ -15,18 +21,34 @@
     width: 64px
     height: 64px
     margin: 0 20px
+    @include largeDevice
+        width: 45px
+        height: 45px
+    @include mediumDevice
+        display: none
 
 .header__list
     display: flex
+    @include mediumDevice
+        flex-direction: column
+        position: absolute
+        top: 0
+        left: 0
+        transform: translateX(0)
+        height: 100vh
+        background: $blue
+        display: none
 
 .header__item
-    margin-right: 10px
+    margin-right: 5px
     &:last-child
         margin-right: 0
+    @include mediumDevice
+        margin: 0
 
 .header__link
     display: flex
-    padding: 25px
+    padding: 15px
     border-radius: 50px
     text-transform: uppercase
     font-weight: 300
@@ -34,9 +56,33 @@
     @include font ($basicFont, $smallText, $white)
     &:hover
         background: $blue
+    @include largeDevice
+        font-size: 1.25rem
+    @include mediumDevice
+        border-radius: 0
+        background: $blue
+        border-bottom: 1px solid $white
+
+.header__input
+    display: none
+
+.header__label
+    display: none
+    @include mediumDevice
+        height: 100%
+        width: 54px
+        display: flex
+        justify-content: center
+        align-items: center
+        background: $blue
+        border-radius: 50%
+        font-size: 1.5rem
+        color: $white
+    @include extraSmallDevice
+        width: 45px
 
 .header__link--active
     background: $blue
 
 .header__btn
-    @include btn ($mediumText, $white, $blue, 18px 34px, none)
+    @include btn ($white, $blue, none)
