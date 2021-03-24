@@ -16,32 +16,59 @@
         top: 0
         left: 0
         z-index: -1
+    @include largeDevice
+        margin-top: -92px
+    @include mediumDevice 
+        margin-top: -76px
+    @include extraSmallDevice
+        margin-top: -67px
+
+.d-f--f-d-c--j-c-s-b
+    @include mediumDevice 
+        height: 100vh
+        display: flex
+        flex-direction: column
+        justify-content: flex-end
 
 .main__text-wrap 
     display: flex
     flex-direction: column
     justify-content: center
     width: 60%
+    @include largeDevice
+        width: 50%
+    @include mediumDevice 
+        width: 100%
+        justify-content: flex-end
 
 .main__title
-    margin-top: 0
-    @include font ($mainFont, $largeTitle, $white)
+    @include mainTitle($white, 0, 0, 0, 0)
 
 .main__subtitle
     margin-top: 0
     width: 380px
     @include font ($basicFont, $mediumText, $white)
     font-weight: 300
+    @include largeDevice
+        font-size: 1.5rem
+    @include smallDevice 
+        font-size: 1rem
 
 .main__img-wrap
     display: flex
     align-items: flex-end
     height: 100vh
     width: 40%
+    @include largeDevice
+        width: 50%
+    @include mediumDevice 
+        width: 100%
+        height: auto
 
 .main__img
     width: 120%
-    
-
-
-
+    @include mediumDevice 
+        width: 60%
+        margin-left: auto
+    @include smallDevice 
+        width: 80%
