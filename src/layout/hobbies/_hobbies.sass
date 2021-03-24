@@ -12,6 +12,15 @@
         left: -200px
         transform: rotate(-7deg)
         z-index: -1
+    @include mediumDevice 
+        padding-bottom: 80px
+        &::before
+            top: -70px
+            left: -100px
+    @include smallDevice 
+        padding-bottom: 50px
+        &::before
+            top: -35px
 
 .hobbies_icon
     color: $lightGreen

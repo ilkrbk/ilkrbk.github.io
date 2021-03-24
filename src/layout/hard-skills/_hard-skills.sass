@@ -25,10 +25,18 @@
         top: 0
         left: 0
         z-index: -1
+    @include mediumDevice 
+        padding: 80px 0 160px 0
+        &::before
+            top: -200px
+            left: -100px
+    @include smallDevice 
+        padding: 50px 0 100px 0
+        &::before
+            top: -270px
 
 .hard-skills__title-main
-    margin-top: 0
-    @include font ($mainFont, $largeTitle, $white)
+    @include mainTitle($white, 0, 0, 0, 0)
 
 .hard-skills__list
     margin-top: 130px
@@ -36,6 +44,12 @@
     width: 100%
     flex-wrap: wrap
     justify-content: space-between
+    @include largeDevice
+        margin-top: 100px
+    @include mediumDevice 
+        margin-top: 80px
+    @include smallDevice 
+        margin-top: 50px
 
 .hard-skills__item
     margin-top: 75px

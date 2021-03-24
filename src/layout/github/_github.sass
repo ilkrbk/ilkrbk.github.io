@@ -6,7 +6,15 @@
 .github__value
     font-weight: 700
     @include font ($basicFont, $mediumText, $white)
+    @include largeDevice
+        font-size: 1.8rem
+    @include mediumDevice 
+        margin-top: 1.5rem
 
 .github__descr
     margin-top: 0
     @include font ($basicFont, $mediumText, $white)
+    @include largeDevice
+        font-size: 1.8rem
+    @include mediumDevice 
+        margin-top: 1.5rem

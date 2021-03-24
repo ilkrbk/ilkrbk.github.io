@@ -3,10 +3,15 @@
     padding: 100px 0
     position: relative
     @include lineBottom (30%)
+    @include largeDevice
+        padding: 80px 0
+    @include mediumDevice 
+        padding: 50px 0
+    @include smallDevice 
+        padding: 50px 0
 
 .info-static__title
-    margin-top: 0
-    @include font ($mainFont, $largeTitle, $white)
+    @include mainTitle($white, 0, 0, 0, 0)
 
 .info-static__list 
     margin-top: 60px
