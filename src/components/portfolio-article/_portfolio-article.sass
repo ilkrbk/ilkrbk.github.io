@@ -8,6 +8,12 @@
         margin-top: 0
     &:nth-child(2)
         margin-top: 0
+    @include largeDevice
+        margin-top: 110px
+    @include mediumDevice
+        width: 100%
+        &:nth-child(2)
+            margin-top: 110px
 
 .portfolio-article-tag__list
     display: flex
@@ -32,6 +38,10 @@
     margin-right: 10px
     &:last-child
         margin-right: 0
+    @include largeDevice 
+        font-size: 0.8rem
+    @include extraSmallDevice
+        font-size: 0.6rem
 
 .portfolio-article-img__item
     width: 100%
@@ -59,17 +69,27 @@
 .portfolio-article__title
     margin-top: 0
     @include font ($mainFont, $mediumText, $white)
+    @include largeDevice 
+        font-size: 2rem
+    @include extraSmallDevice
+        font-size: 1.5rem
 
 .portfolio-article__link
     border: 1px solid transparent
     border-radius: 50%
-    padding: 0 13px
     background: $red
+    width: 41px
     display: flex
     align-items: center
     justify-content: center
     color: $white
     transition: all ease-in .2s
+    font-size: 1rem
     &:hover
         border: 1px solid $white
         background: none
+    @include largeDevice 
+        width: 36px
+    @include mediumDevice 
+        padding: 0 40px
+        border-radius: 20px

@@ -14,15 +14,26 @@
         left: -200px
         transform: rotate(-7deg)
         z-index: -1
+    @include largeDevice
+        padding: 0 0 50px 0
+        &::after
+            left: -150px
+    @include smallDevice 
+        &::after
+            left: -50px
     
 .projects__nav 
     width: 100%
     margin-top: 50px
+    @include mediumDevice
+        margin-top: 20px
 
 .projects__list 
     display: flex
     padding: 0 100px
     justify-content: space-around
+    @include largeDevice
+        padding: 0 50px
 
 .projects__btn
     padding: 10px 20px
@@ -35,6 +46,12 @@
     transition: all ease-in-out .3s
     &:hover
         background: $red
+    @include largeDevice
+        font-size: 1rem
+    @include mediumDevice 
+        white-space: nowrap
+        display: flex
+        margin-right: 20px
 
 .projects-article__list
     width: 100%
@@ -42,7 +59,11 @@
     justify-content: space-between
     flex-wrap: wrap
     margin-top: 90px
+    @include mediumDevice
+        margin-top: 70px
 
 .projects-articles__btn
     margin-top: 111px
     @include btn ($white, $red, none)
+    @include largeDevice
+        margin-top: 80px
