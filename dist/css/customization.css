@@ -1,0 +1,29 @@
+.soft-skills__svg circle{
+    cx: 80;
+    cy: 80;
+    r: 65;
+}
+
+@media screen and (max-width: 1240px){
+    .soft-skills__svg circle{
+        cx: 70;
+        cy: 70;
+        r: 55;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .soft-skills__svg circle{
+        cx: 55;
+        cy: 55;
+        r: 45;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .soft-skills__svg circle{
+        cx: 40;
+        cy: 40;
+        r: 30;
+    }
+}
