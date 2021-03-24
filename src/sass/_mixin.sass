@@ -50,4 +50,16 @@
         padding: 8px 22px
     @include extraSmallDevice
         font-size: 1.5rem
-        padding: 8px 16px
+
+@mixin mainTitle($color, $m1, $m2, $m3, $m4)
+    margin-top: $m1
+    @include font ($mainFont, $largeTitle, $color)
+    @include largeDevice
+        margin-top: $m2
+        font-size: 4rem
+    @include smallDevice 
+        margin-top: $m3
+        font-size: 3rem
+    @include extraSmallDevice
+        margin-top: $m4
+        font-size: 2.5rem
