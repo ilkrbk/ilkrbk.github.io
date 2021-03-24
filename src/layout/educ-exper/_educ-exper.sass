@@ -13,21 +13,32 @@
         left: -200px
         transform: rotate(-7deg)
         z-index: -1
+    @include mediumDevice 
+        padding-top: 80px
+        &::before
+            bottom: -70px
+            left: -100px
+    @include smallDevice 
+        padding-top: 50px
+        &::before
+            bottom: -35px
 
 .educ-exper__title
-    display: flex
-    margin-top: 0
-    justify-content: center
-    @include font ($mainFont, 5rem, $white)
+    text-align: center
+    @include mainTitle($white, 0, 0, 0, 0)
 
 .educ-exper__wrap-lists
     display: flex
+    @include mediumDevice 
+        flex-direction: column
 
 .educ__list, .exper__list
     margin-top: 60px
     display: flex
     flex-direction: column
     width: 50%
+    @include mediumDevice 
+        width: 100%
 
 .educ__item, .exper__item
     margin-top: 50px
@@ -35,6 +46,10 @@
     position: relative
     &:first-child
         margin-top: 0
+    @include largeDevice
+        padding: 0 0 0 60px
+    @include smallDevice 
+        margin-top: 30px
 
 .educ__icon, .exper__icon
     position: absolute
@@ -58,6 +73,12 @@
         position: absolute
         top: 100%
         left: 50%
+    @include largeDevice
+        width: 45px
+        height: 45px
+        > i 
+            font-size: 1.25rem
+            color: $black
 
 
 .educ__date, .exper__date
@@ -74,8 +95,17 @@
     font-weight: 700
     text-transform: uppercase
     @include font ($basicFont, $mediumText, $white)
+    @include largeDevice 
+        margin-top: 30px
+        font-size: 2rem
+    @include smallDevice 
+        font-size: 1.5rem
 
 .educ__descr, .exper__descr
     margin-top: 10px
     text-transform: uppercase
     @include font ($basicFont, $smallText, $white)
+    @include largeDevice 
+        font-size: 1.25rem
+    @include smallDevice 
+        font-size: 1rem
