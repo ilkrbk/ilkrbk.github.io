@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6, p
 	background-image: url(../img/bg-article.jpg)
 	background-size: cover
 	z-index: -1
+	@include mediumDevice
+		background-image: none
+		background: $darkGrey
 
 .article-page__article
 	background: $white
@@ -69,6 +72,16 @@ h1, h2, h3, h4, h5, h6, p
 	p
 		text-align: justify
 		@include font($basicFont, $smallText, $black)
+	@include mediumDevice
+		background: none
+		padding: 0px
+		margin-top: 150px
+		box-shadow: none
+		p
+			color: $white
+			font-size: $ultraSmallText
+	@include extraSmallDevice
+		margin-bottom: 0
 
 .article-page__img-wrap
 	max-width: 90%
@@ -83,3 +96,6 @@ h1, h2, h3, h4, h5, h6, p
 	margin-top: 20px
 	text-align: center
 	@include font($mainFont, $largeText, $black)
+	@include mediumDevice
+		color: $white
+		font-size: $mediumText
