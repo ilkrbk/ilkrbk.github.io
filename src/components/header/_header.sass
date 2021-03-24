@@ -6,6 +6,8 @@
     border: solid 1px $white
     border-radius: 50px
     margin-top: 30px
+    position: relative
+    z-index: 99
     @include largeDevice
         margin-top: 20px
         padding: 8px
@@ -30,14 +32,16 @@
 .header__list
     display: flex
     @include mediumDevice
+        margin-top: 100px
+        margin-left: 5px
+        padding: 30px
         flex-direction: column
         position: absolute
         top: 0
         left: 0
-        transform: translateX(0)
-        height: 100vh
+        transition: all ease-in .3s
+        transform: translateX(-150%)
         background: $blue
-        display: none
 
 .header__item
     margin-right: 5px
@@ -45,10 +49,12 @@
         margin-right: 0
     @include mediumDevice
         margin: 0
+        &:last-child .header__link
+            border-bottom: 1px solid $white
 
 .header__link
     display: flex
-    padding: 15px
+    padding: 25px
     border-radius: 50px
     text-transform: uppercase
     font-weight: 300
@@ -57,11 +63,15 @@
     &:hover
         background: $blue
     @include largeDevice
+        padding: 15px
         font-size: 1.25rem
     @include mediumDevice
         border-radius: 0
         background: $blue
-        border-bottom: 1px solid $white
+        border-top: 1px solid $white
+        &:hover
+            background: $white
+            color: $blue
 
 .header__input
     display: none
@@ -80,6 +90,9 @@
         color: $white
     @include extraSmallDevice
         width: 45px
+
+.header__input:checked ~ .header__list
+    transform: translateX(0)
 
 .header__link--active
     background: $blue
