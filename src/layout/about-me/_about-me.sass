@@ -3,14 +3,20 @@
     background: $blue
     height: 100vh
     width: 100%
+    @include largeDevice 
+        height: auto
 
 .about-me__img-wrap
     width: 50%
     display: flex
     align-items: flex-end
+    @include mediumDevice 
+        display: none
 
 .about-me__img
     width: 90%
+    @include largeDevice
+        width: 100%
     
 .about-me__text-wrap
     width: 50%
@@ -18,20 +24,37 @@
     display: flex
     flex-direction: column
     align-items: center
+    @include largeDevice
+        padding: 75px 0
+    @include mediumDevice 
+        width: 100%
+        padding: 50px 0
+    @include smallDevice 
+        padding: 30px 0
   
 .about-me__title
-    margin-top: 0
-    @include font ($mainFont, $largeTitle, $white)
+    @include mainTitle($white, 0, 0, 0, 0)
 
 .about-me__descr
     margin-top: 60px
     line-height: 36px
     text-align: center
     @include font ($basicFont, $smallText, $white)
+    @include largeDevice
+        font-size: $ultraSmallText
+    @include mediumDevice 
+        margin-top: 30px
+    @include smallDevice 
+        font-size: 1rem
+        margin-top: 15px
 
 .about-me__btn
     margin-top: 60px
     @include btn ($white, none, solid 4px $white)
+    @include mediumDevice 
+        margin-top: 30px
+    @include smallDevice 
+        margin-top: 15px
 
 .b-n
     border: 1px solid $white
